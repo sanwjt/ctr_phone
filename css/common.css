@@ -1,0 +1,131 @@
+body {
+    font: 16px 'Microsoft YaHei','宋体', Tahoma, Arial, sans-serif;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.fz28{
+    font-size: 14px;
+}
+.fz32{
+    font-size: 16px;
+}  
+/* 字号 */
+/* 主题中字号 */
+.lg-fontsize{
+    font-size: 24px;
+}
+.normal-fontsize{
+    font-size: 16px;
+}
+/* 主题小中字号 */
+.m-fontsize{
+    font-size: 15px;
+}
+/* 主题小字号 */
+.s-fontsize{
+    font-size: 14px;
+}
+
+/* 按钮 */
+.large-btn{
+    width:343px;
+    height:48px;
+    line-height: 48px;
+    border-radius:6px;
+    color:#fff;
+    font-size: 16px;
+    background:#FF8720;
+    text-align: center;
+    margin: 0 auto;
+}
+.mid-btn{
+    width:311px;
+    height:48px;
+    line-height: 48px;
+    border-radius:6px;
+    color:#fff;
+    font-size: 16px;
+    background:#FF8720;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+/* 橘色系 */
+.theme-text-color{
+    color:#FF8720
+}
+.theme-bg{
+    background:#FF8720;
+}
+
+/* 灰色系 */
+.boder-bg{
+    background: #F0F0F0;
+}
+.content-bg{
+    background: #F7F6F9;
+}
+  
+.text-placeholder{
+    color:#9B9B9B;
+}
+
+/* 红色系 */
+.text-wranning{
+    color:#FF001F;
+}
+.text-tips{
+    color:#F14955;
+}
+
+.artile{
+    color:#764319;
+}
+
+
+/* 顶部 */
+header{
+    width:375px;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    font-size:18px;
+    color:#000;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:250;
+    color:rgba(0,0,0,1);
+    border-bottom: 1px solid #E7E8E9;
+    
+}
+
+
+
+/* 底部 */
+footer{
+    box-shadow:0px -2px 4px 0px rgba(0,0,0,0.07);
+    position: fixed;
+    width:375px;
+    height: 60px;
+    left:0;
+    bottom:0;
+  }
+  footer ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    align-items:center;
+    display: -webkit-flex;
+   
+  }
+  footer ul li img{
+    width: 80%;
+  }
+  footer .footer_ed{
+    color:#FF8720;
+  }

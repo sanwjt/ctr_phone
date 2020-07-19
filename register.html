@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index1.css">
+	<title>注册</title>
+</head>
+<body>
+   <div class="register">
+    <!-- 绑定手机号 -->
+        <div class="register_phone" >
+            <div class="commom_imgbg"><img src="img/top-bg.png" alt=""></div>
+            <div class="register_phonebox">
+                <h4 class="lg-fontsize">绑定手机号</h4>
+                <div><input type="text" placeholder="请输入手机号"></div>  
+            </div> 
+            <div class="large-btn">下一步</div>    
+        </div>
+        
+    <!-- 注册验证码 -->
+        <div class="register_yzm" style="display: none;">
+            <div class="commom_imgbg" ><img src="img/top-bg.png" alt=""></div>
+            <div class="register_yzmbox">
+                <h4 class="lg-fontsize">绑定手机号</h4>
+                <div class="sent"><span>已发送短信验证码至</span>13900008888</div>
+                <div class="yzm_num">
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                    <span>1</span>
+                </div>
+            </div>
+            <div class="large-btn">重新发送</div>                
+
+        </div>
+    <!-- 注册完善信息 -->
+        <div class="register_complete" style="display: none;">
+            <!-- 男头像 -->
+            <img class="register_avatar" src="img/avatar-male.png" alt="">
+            <!-- 女头像 -->
+            <!-- <img class="register_avatar" src="img/avatar-female.png" alt=""> -->
+            <div class="register_completebox">
+                <div class="answerList">
+                    <span><label for="">生日</label></span>
+                    <div class="xuanxiang">
+                        <input class="inputControl" value="" readonly="readonly" name="birthDate" id="birthDate" type="text">
+                    </div>
+                    <span><img src="img/down.png" alt=""></span>
+                </div>
+                <div class="answerList">
+                    <span><label for="">城市</label></span>
+                    <div class="xuanxiang">
+                        <input class="inputControl" value="" readonly="readonly" name="cityArea" id="cityArea" type="text">
+                        <input id="cityValue" type="hidden" />
+                    </div>
+                    <span><img src="img/down.png" alt=""></span>
+
+                </div>
+                <div class="answerList">
+                    <span><label for="">性别</label></span>
+                    <div class="radioChoose" id="sex">
+                        <div class="radioItem">
+                            <span><label for="">男</label></span>
+                            <input type="radio" name="sex" value="1">
+                            <span class="radiosex"></span>
+                        </div>
+                        <div class="radioItem">
+                            <span><label for="">女</label></span>
+                            <input type="radio" name="sex" value="2">
+                            <span class="radiosex"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="answerList">
+                    <span><label for="">密码</label></span>
+                    <div class="xuanxiang passwordInput">
+                        <input type="password" placeholder="输入登录密码"></div>
+                 </div>
+                
+            </div>
+            <div class="large-btn">注册完成</div>       
+        </div>
+    <!-- 滑动验证 还没有写完 -->
+    <div class="register_phone" style="display: none;">
+        <div class="commom_imgbg"><img src="img/top-bg.png" alt=""></div>
+        <div class="register_slidebox">
+            <h4 class="lg-fontsize">欢迎来到</h4>
+            <div><input type="text" placeholder="请输入手机号"></div>  
+        </div> 
+        <div class="large-btn">登陆</div>    
+        <div>密码登陆</div>
+    </div>
+    </div>
+   
+
+<script src="js/zepto.min.js"></script>
+
+</body>
+</html>

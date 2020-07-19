@@ -72,16 +72,22 @@
 /* 帮助反馈 */
 .help{
   padding:19px 32px 45px;
+  margin-top: 12px;
+  background-color: #fff;
 }
 .help ul li{
   border-bottom:1px solid #F0F0F0;
-  height: 40px;
-  line-height: 40px;
+  height: 52px;
+  line-height: 52px;
   display:flex;
   flex-wrap: nowrap;
   justify-content:space-between;
   align-items:center;
   display: -webkit-flex;
+}
+.help ul li label{
+  font-size: 16px;
+  font-weight: 300;
 }
 .feedback_btn{
   position: fixed;
@@ -598,5 +604,130 @@
   color:#fff
 }
 
+.userLeve .header .leveIcon{
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: 7px;
+}
+
+.userLeve .header .table{
+ width: 343px;
+ margin: 0 auto;
+ display: flex;
+ background-color: #fff;
+ border-radius: 6px;
+ overflow: hidden;
+}
+.userLeve .header .table li{
+
+  font-size: 12px;
+  flex: 1;
+  text-align: center;
+}
+.userLeve .header .table div{
+  padding: 12px 13px;
+  height: 31px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.userLeve .header .table div.title{
+  background-color: #FFEED3;
+}
+
+.userLeve .description{
+  font-size:16px;
+  line-height:32px;
+  text-align: justify;
+  margin-top: 16px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
 
 
+/*  基础信息 */
+.baseInfo .header{
+  padding:18px 32px;
+  background-color: #F6F7F8;
+}
+.baseInfo .header p{
+  font-size: 16px;
+  font-weight:300;
+  line-height: 32px;
+
+}
+.baseInfo .header span{
+  font-size: 16px;
+  font-weight:300;
+  color: #FF8720;
+  font-weight:500;
+}
+
+.baseInfo .content{
+  padding: 0 32px;
+}
+
+/* 信用等级 */
+.credit .description{
+  font-size: 16px;
+  line-height: 32px;
+  text-align: justify;
+  margin-top: 16px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.credit .levelrule{
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 12px;
+  margin-bottom: 33px;
+}
+.credit .levelrule li{
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  height: 124px;
+  display: flex;
+  border-right: 1px solid #D4D5D6;
+}
+.credit .levelrule.ruletable li{
+  height: 194px;
+}
+.credit .levelrule li div{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid #D4D5D6;
+}
+.mainTitle{
+  background:rgba(255,218,157,1);
+  color:#8B572A
+}
+.smalltitle{
+  background:rgba(255,238,211,1);
+  color:#8B572A
+}
+.distitle{
+  background-color: #D5D7D9;
+  box-sizing: border-box;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+.credit .levelrule li.secondrule{
+  flex: .3;
+}
+
+/* 私家车信息 */
+.cardinfo{
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #fff;
+}

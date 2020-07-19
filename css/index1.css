@@ -408,5 +408,22 @@
   margin-bottom:24px;
 }
 
+/* 会员等级 */
+.userLeve .header{
+  height: 353px;
+  background-color: #3A2C51;
+}
+.userLeve .header .nav{
+  padding:18px 0;
+  font-size: 16px;
+  color:#9B9B9B;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.userLeve .header .nav li.active{
+  color:#fff
+}
+
 
 

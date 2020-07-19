@@ -346,6 +346,9 @@
   text-align: center;
 }
 /* 账号 */
+.accunt{
+  margin-top:12px;
+}
 .accunt_tips1{
   font-weight:150;
   color:#000;
@@ -355,12 +358,13 @@
   padding:19px 32px;
 }
 .solve{
-  width: 169px;
-  flex-wrap: nowrap;
-  justify-content:space-between;
-  align-items:center;
-  display: -webkit-flex;
-  margin:0 auto;
+     flex-wrap: nowrap;
+     justify-content: center;
+     display: -webkit-flex;
+}
+.solve img{
+  width: 128px;
+  margin:0 8px;
 }
 /* 奖金记录 */
  .tabBox{
@@ -429,6 +433,7 @@
 /* 站内信 */
 .message{
   background:#F6F7F8;
+  margin-top: 12px;
 }
 .message ul li{
   background: #fff;
@@ -454,6 +459,45 @@
 .date{
   font-size:14px;
   color:#9B9B9B;
+}
+/* 站内信正文 */
+.messageContent{
+  padding:25px 16px 0;
+  font-size: 14px;
+}
+.messageTile{
+  font-weight: bold;
+  font-size: 18px;
+}
+.messageSubtitle{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  display: -webkit-flex;
+  margin-top: 12px;
+  
+}
+.messageRight{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  display: -webkit-flex;
+  width: 170px;
+}
+.messageRight li{
+  color: #FF8720;
+}
+.messageImg{
+  width: 343px;
+  height: 157px;
+  background:#E3E4E6;
+  margin-top: 24px;
+}
+.messageInfo{
+  margin-top:8px;
+}
+.messageInfo p{
+  margin-bottom: 20px;
 }
 /* 系统公告 */
 .announcement{
@@ -494,6 +538,10 @@
   color:#9B9B9B;
   border-bottom:1px solid #666;
   margin:24px 0;
+}
+.zhucea{
+  color:#fff;
+  display: block;
 }
 /* 注册验证码 */
 .register_yzmbox{

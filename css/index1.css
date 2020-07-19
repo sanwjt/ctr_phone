@@ -270,6 +270,75 @@
 .personalBox li img{
   width: 32px;
 }
+/* 滑动验证 */
+.slideTop{
+  margin-top: 5px;
+}
+.changeImg{
+  position: relative;
+}
+.yzRightop{
+  position: absolute;
+  right: 14px;
+  top:8px
+}
+.yzRightop {
+  display: flex;
+  display: -webkit-flex;
+  width: 45px;
+  justify-content: space-between;
+}
+.yzRightop img{
+  width: 16px;
+  height: 16px;
+}
+.get-yzm{
+  color:#FF8720;
+  width: 113px;
+  position: absolute;
+  right: 0;
+  bottom: 32px;
+  text-align: center;
+  border-left: 1px solid #9B9B9B;
+}
+/* 快速登陆 */
+.quick-btn{
+  color: #FF8720;
+  background: #FEF2E5;
+}
+.quick-login{
+  color:#000;
+  margin-top: 20px;
+  text-align: center;
+}
+.quick-logina{
+  color:#000;
+  text-align: center;
+  margin-top: 20px;
+}
+.login-yz{
+  position: relative;
+}
+.countdown{
+  width: 113px;
+  position: absolute;
+  right: 0;
+  color: #9B9B9B;
+  bottom: 32px;
+  text-align: center;
+  border-left: 1px solid #9B9B9B;
+}
+/* 忘记密码 */
+.forget-yzbtn{
+  color:#FF8720;
+  background:#F6F7F8;
+}
+/* 忘记密码重置成功 */
+.resetsuccessBox{
+  color: #FF8720;
+  padding:145px 54px 54px;
+  text-align: center;
+}
 /* 账号 */
 .accunt_tips1{
   font-weight:150;
@@ -287,6 +356,39 @@
   display: -webkit-flex;
   margin:0 auto;
 }
+/* 奖金记录 */
+ .tabBox{
+   display: flex;
+   height: 60px;
+   justify-content:space-around;
+   align-items:center;
+   display: -webkit-flex;
+   border-bottom: 1px solid #EEEEEE;
+ }
+ .recordBox{
+   padding:0 32px;
+ }
+ .recordBox ul li{
+   height: 90px;
+   justify-content:space-between;
+   align-items: center;
+   display: flex;
+   display: -webkit-flex;
+   border-bottom: 1px solid #F3F0F1;
+ }
+ .recordeRight{
+  align-items: center;
+  display: flex;
+  display: -webkit-flex;
+
+ }
+ .record-num{
+  color:#FF8720;
+  font-size:18px;
+ }
+ .record-rednum{
+   color: #F14955;
+ }
 /* 账号设置 */
 .accunt_config{
   background:#F6F7F8;

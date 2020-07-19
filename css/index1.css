@@ -169,14 +169,15 @@
 /* 个人中心 */
 .personalTop{
   width: 375px;
-  height: 234.22px;
+  height: 227px;
   background: #FE8C2A;
   padding-top:20px;
  
 }
 .personalInner{
   padding:0 23px 0 20px;
-  margin-top: -240px;
+  position: absolute;
+  top: 18px;
 }
 .statements{
   width: 300px;
@@ -198,6 +199,58 @@
 }
 .statements .goStatement{
   display: block;
+}
+.levelBox{
+  display: flex;
+  display: -webkit-flex;
+  justify-content:space-between;
+  margin-top: 10px;
+  align-items: center;
+  
+}
+.level-avatar{
+  width: 72px;
+  height: 72px;
+  margin-right: 12px;
+}
+.personal-info{
+  color:#fff;
+  margin-left:-85px
+}
+.level-bitmap{
+  width: 66px;
+}
+.grayBg{
+  width: 375px;
+  height: 152px;
+  background: #F5F7F9;
+}
+.medal{
+  text-align: center;
+}
+.level-text{
+  width: 60px;
+  height: 18px;
+  font-size: 12px;
+  color:#5E6A70;
+  background: url(../img/silver-bg.png);
+  background-size: 100% 100%;
+}
+.beanBox{
+  width: 343px;
+  height: 93px;
+  background: #fff;
+  border-radius: 6px;
+  align-items: center;
+  display: flex;
+  display: -webkit-flex;
+  margin-top: 35px;
+  justify-content: space-evenly;
+}
+.lunboAds{
+  width: 343px;
+  height: 79px;
+  margin-top: 12px;
 }
 /* 账号 */
 .accunt_tips1{

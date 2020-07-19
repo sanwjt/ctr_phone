@@ -11,8 +11,14 @@
 <body>
     <!-- 金豆记录 -->
     <ul class="tabBox">
-        <li>现今记录</li>
-        <li>金豆记录</li>
+        <li class="active">
+            现今记录
+            <div class="activeborder"></div>
+        </li>
+        <li>
+          金豆记录
+          <div class="activeborder"></div>
+        </li>
     </ul>
 	<div class="recordBox">
        <ul >
@@ -104,7 +110,15 @@
 
 <script src="js/zepto.min.js"></script>
 <script>
-
+  $(function(){
+    $('.tabBox li').on('click',function(){
+        var index = $(this).index();
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.recordBox ul').hide()
+        $('.recordBox ul').eq(index).show();
+    })
+  })
 </script>	
 </body>
 </html>

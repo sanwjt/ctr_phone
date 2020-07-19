@@ -371,6 +371,28 @@
    display: -webkit-flex;
    border-bottom: 1px solid #EEEEEE;
  }
+ .tabBox li{
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  align-items: center;
+  line-height: 60px;
+  position: relative;
+ }
+ .tabBox li .activeborder{
+   display: none;
+ }
+ .tabBox li.active .activeborder{
+   display: block;
+   border:1px solid #FF8720;
+   width: 40px;
+   height: 1px;
+   background-color: #FF8720;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%,-2px);
+ }
  .recordBox{
    padding:0 32px;
  }
@@ -386,7 +408,9 @@
   align-items: center;
   display: flex;
   display: -webkit-flex;
-
+ }
+ .recordeRight img{
+   width: 28px;
  }
  .record-num{
   color:#FF8720;

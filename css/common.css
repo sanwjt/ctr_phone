@@ -114,18 +114,35 @@ footer{
     height: 60px;
     left:0;
     bottom:0;
+    padding-top: 10px;
+    box-sizing: border-box;
   }
   footer ul {
     display: flex;
     flex-wrap: nowrap;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
     display: -webkit-flex;
    
   }
+  footer ul li{
+    flex: 1;
+    text-align: center;
+    font-size: 11px;
+  }
   footer ul li img{
-    width: 80%;
+    width: 19px;
+    text-align: center;
+    display: inline-block;
   }
   footer .footer_ed{
     color:#FF8720;
+  }
+
+  .direction_icon{
+    width: 18px;
+  }
+  
+  .w100{
+    width: 100%;
   }

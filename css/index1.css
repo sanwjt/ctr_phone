@@ -87,6 +87,7 @@
   position: fixed;
   top: 414px;
   right:32px;
+  width: 72px;
 }
 
 /* 商业调查 */
@@ -355,6 +356,7 @@
   justify-content:space-between;
   align-items:center;
   display: -webkit-flex;
+  font-size: 16px;
 }
 .radioChoose{
   display:flex;

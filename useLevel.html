@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-19 11:01:34
- * @LastEditTime: 2020-07-19 11:23:48
+ * @LastEditTime: 2020-07-19 17:18:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /ctr_phone/useLevel.html
@@ -12,6 +12,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover,user-scalable=no">
   <title>会员等级规则</title>
+  <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index1.css">
 </head>
@@ -24,7 +25,69 @@
               <li>黄金</li>
               <li>钻石</li>
             </ul>
+            <div class="leveIcon">
+                <img class="w100" src="" alt="">
+            </div>
+            <ul class="table">
+                <li>
+                  <div class="title">成长值</div>
+                  <div class="dataIndex">≥4000</div>
+                </li>
+                <li>
+                  <div class="title">商业调查额外奖励</div>
+                  <div class="dataIndex">+7%</div>
+                </li>
+                <li>
+                  <div class="title">商业调查额外奖励</div>
+                  <div class="dataIndex">+7%</div>
+                </li>
+                <li>
+                  <div class="title">商业调查额外奖励</div>
+                  <div class="dataIndex">+7%</div>
+                </li>
+            </ul>
         </div>  
+        <div class="common_content_bar">
+          <h3 class="common_title">会员等级规则</h3>
+          <p class="description">会员等级反映会员在平台信息完善程度和活跃程
+            度。默认是普通会员，等级达到一定级别可享受
+            商业调查3%-12的额外奖励及增加幸运抽奖次
+            数。会员在一定时间内未登陆平台，会员等级会
+            下降。</p>
+          <h3 class="common_title">如何提升会员等级？</h3>
+          <ul class="taskList">
+                <li>
+                  <span class="label">签到任务</span>
+                  <span class="count">+10分</span>
+                  <span class="tasAction">去完成</span>
+                </li>
+                <li>
+                  <span class="label">基础信息</span>
+                  <span class="count">+10分</span>
+                  <span class="tasAction">去完成</span>
+                </li>
+                <li>
+                  <span class="label">认证信息</span>
+                  <span class="count">+10分</span>
+                  <span class="tasAction">去完成</span>
+                </li>
+                <li>
+                  <span class="label">好友推荐</span>
+                  <span class="count">+10分</span>
+                  <span class="tasAction">去完成</span>
+                </li>
+          </ul>
+        </div>
     </div>
+    <script src="js/zepto.min.js"></script>
+<script src="js/flexible.js"></script>
+<script>
+  $(function(){
+    $('.nav li').on('click',function(){
+       $(this).addClass('active');
+       $(this).siblings().removeClass('active')
+    })
+  })
+</script>
 </body>
 </html>

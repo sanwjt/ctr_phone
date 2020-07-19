@@ -1,0 +1,58 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-07-19 21:21:32
+ * @LastEditTime: 2020-07-19 21:40:28
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /ctr_phone/cardInfo.html
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover,user-scalable=no">
+  <title>私家车信息</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index1.css">
+  <link rel="stylesheet" href="lib/mobileSelect/css/mobileSelect.css">
+  <link rel="stylesheet" href="lib/mobileSelect/css/public.css">
+</head>
+<body>
+    <div class="toTop12"></div>
+    <div class="cardinfo"> 
+      <div class="formItemSelect">
+        <div class="label">您家是否有私家车</div>
+        <div class="itemValue" id="trigger1">请选择</div>
+      </div>
+      <div class="formItemSelect">
+        <div class="label">您家的私家车品牌是</div>
+        <div class="itemValue" id="trigger1">请选择</div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="lib/mobileSelect/js/mobileSelect.js"></script>
+    <script>
+      $(function(){
+               // demo
+        var sexArr = [{id:1,value:"有"},{id:0,value:'没有'}]
+        var mobileSelect1 = new MobileSelect({
+            trigger: '#trigger1',
+            title: '您家是否有私家车',
+            wheels: [
+                      {data: sexArr}
+                    ],
+            position:[0], //初始化定位 打开时默认选中的哪个 如果不填默认为0
+            transitionEnd:function(indexArr, data){
+                //console.log(data);
+            },
+            callback:function(indexArr, data){
+                console.log(data);
+            }
+        });
+
+      })
+    </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-07-19 18:11:29
+ * @LastEditTime: 2020-07-19 19:18:39
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /ctr_phone/baseInfo.html
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover,user-scalable=no">
+  <title>基础信息</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index1.css">
+  <link rel="stylesheet" href="lib/mobileSelect/css/mobileSelect.css">
+  <link rel="stylesheet" href="lib/mobileSelect/css/public.css">
+  <link href="lib/mobiscroll/css/mobiscroll.custom-3.0.0-beta6.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="lib/LArea/css/LArea.min.css">
+</head>
+<body>
+    <div class="baseInfo">
+       <div class="header">
+          <p>
+            新注册用户首次完善个人资料奖励<span>100金豆!</span><br>完善详细信息可获得更多任务！</p>
+          <p class="theme-text-color">完善程度</p>
+       </div>
+       <div class="content">
+            <div class="formItemSelect">
+              <div class="label">性别</div>
+              <div class="itemValue" id="trigger1">请选择</div>
+            </div>
+            <div class="formItemSelect">
+              <div class="label">生日</div>
+              <input class="inputControl" placeholder="请选择" value="" readonly="readonly" name="birthDate" id="birthDate" type="text">
+            </div>
+            <div class="formItemSelect">
+              <div class="label">城市</div>
+              <input class="inputControl" placeholder="请选择" value="" readonly="readonly" name="cityArea" id="cityArea" type="text">
+            </div>
+            <div class="formItemSelect">
+              <div class="label">学历</div>
+              <div class="itemValue" id="trigger1">请选择</div>
+            </div>
+            <div class="formItemSelect">
+              <div class="label">职业</div>
+              <div class="itemValue" id="trigger1">请选择</div>
+            </div>
+            <div class="formItemSelect">
+              <div class="label">个人月收入</div>
+              <div class="itemValue" id="trigger1">请选择</div>
+            </div>
+            <div class="formItemSelect">
+              <div class="label">家庭月收入</div>
+              <div class="itemValue" id="trigger1">请选择</div>
+            </div>
+            <div class="formItemSelect">
+              <div class="label">是否有18岁以下子女</div>
+              <div class="itemValue" id="trigger1">请选择</div>
+            </div>
+            <div class="formItemSelect">
+              <div class="label">最小子女生日</div>
+              <div class="itemValue" id="trigger1">请选择</div>
+            </div>
+       </div>
+      <div class="large-btn" style="margin-top: 24px;margin-bottom: 60px;">提交</div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="lib/mobiscroll/js/mobiscroll.custom-3.0.0-beta6.min.js"></script>
+    <script src="lib/LArea/js/LAreaData2.js"></script>
+    <script src="lib/LArea/js/LArea.min.js"></script>
+    <script src="lib/mobileSelect/js/mobileSelect.js"></script>
+
+    <script>
+      $(function(){
+        // demo
+        var sexArr = [{id:'man',value:"男"},{id:'woman',value:'女'}]
+        var mobileSelect1 = new MobileSelect({
+            trigger: '#trigger1',
+            title: '单项选择',
+            wheels: [
+                      {data: sexArr}
+                    ],
+            position:[0], //初始化定位 打开时默认选中的哪个 如果不填默认为0
+            transitionEnd:function(indexArr, data){
+                //console.log(data);
+            },
+            callback:function(indexArr, data){
+                console.log(data);
+            }
+        });
+
+              			/*生日选择初始化*/
+			var currYear = (new Date()).getFullYear();// 获取年
+			$('#birthDate').mobiscroll().date({
+				theme: 'ios', //皮肤样式
+                display: 'modal', //显示方式 
+                display : 'bottom', // 日期选择模式
+                //clickShow:true,
+                mode: 'scroller', //日期选择模式
+	              dateFormat: 'yyyy-mm-dd',
+			        	defaultValue: new Date('1980-01-01'),
+	              lang: 'zh',
+	              showNow: true,
+	              nowText: "今天",
+                startYear: currYear - 100, //开始年份
+                endYear: currYear, //结束年份
+                // onBeforeShow:mobiscroll_beforeShow
+        });
+
+        		/*选择城市*/
+			var area1 = new LArea();
+			function cityArea(){
+			    area1.init({
+			        'trigger': '#cityArea', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+			        'valueTo': '#cityValue', //选择完毕后id属性输出到该位置
+			        'keys': {
+			            id: 'value',
+			            name: 'text'
+			        }, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+			        'type': 2, //数据源类型
+			        'data': [provs_data, citys_data, dists_data], //数据源
+			    });
+      }
+
+
+      $("#cityArea").on("touchstart",function(e){
+		    	// if($("input[name='birthDate']").val()=='' || $("input[name='birthDate']").val()==undefined){
+		    	// 	alertMessage("请先完成上一题！");
+		    	// 	e.preventDefault();
+		    	// }else{
+		    		cityArea();
+		    		$("#cityArea").unbind("touchstart");
+		    	// }
+		    })
+
+      })
+    </script>
+</body>
+</html>

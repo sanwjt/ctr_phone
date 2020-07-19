@@ -1,5 +1,7 @@
 body {
-    font: 16px 'Microsoft YaHei','宋体', Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    font-family: 'PingFangSC-Light,PingFang SC';
+    /* font: 16px 'Microsoft YaHei','宋体', Tahoma, Arial, sans-serif; */
 }
 .fl{
     float: left;
@@ -146,3 +148,82 @@ footer{
   .w100{
     width: 100%;
   }
+
+  /* 标题 */
+  .common_title{
+    height: 16px;
+    padding-left: 6px;
+    border-left: 4px solid #FF8720;
+    line-height: 16px;
+    font-size: 16px;
+    color: #000000;
+    font-weight:500;
+  }
+  /* 样式下方有滚动调 安全边界是16 */
+  .common_content_bar{
+    padding:24px 16px 60px 16px;
+  }
+  
+  /* 下拉框样式 */
+  .formItemSelect{
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 52px;
+    line-height: 52px;
+    background: url(../img/right.png) no-repeat right center;
+    background-size: 18px 18px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .formItemSelect .label{
+    font-size: 16px;
+    font-weight:300;
+  }
+  .formItemSelect .itemValue{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .formItemSelect  .inputControl{
+    text-align: right;
+    font-size: 14px;
+  }
+
+  /* 去完成任务 */
+  .taskList li{
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: 300;
+    overflow: hidden;
+    margin-bottom: 18px;
+  }
+  .taskList{
+    margin-top: 18px;
+  }
+  .taskList li .label{
+    margin-right: 24px;
+  }
+  .taskList li .count{
+    font-weight:500;
+    color: #FF8720;
+    font-size: 16px;
+  }
+  
+  .taskList li .tasAction{
+    display: inline-block;
+    width: 78px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    border-radius: 15px;
+    border:1px solid rgba(255,135,32,1);
+    color: #FF8720;
+    font-size: 14px;
+  }
+  /* 举例顶部举例 */
+  .toTop12{
+    height: 12px;
+    background:rgba(246,247,248,1);
+  }
+  

@@ -181,9 +181,11 @@
  
 }
 .personalInner{
-  padding:0 23px 0 20px;
+  padding:0 16px;
+  box-sizing: border-box;
   position: absolute;
   top: 18px;
+  overflow: hidden;
 }
 .statements{
   width: 300px;
@@ -258,7 +260,35 @@
   height: 79px;
   margin-top: 12px;
 }
+
 .personalBox{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-top: 21px;
+  justify-content: start;
+  margin-right: -72px;
+  padding-left: 16px;
+  /* width: 100%; */
+}
+
+.personalBox li{
+  width: 56px;
+  text-align: center;
+  font-size: 12px;
+  margin-right: 72px;
+  margin-bottom: 24px;
+}
+
+.personalBox li img{
+  width: 32px;
+  display: inline-block;
+}
+.personalBox li img.w22{
+  width: 22px;
+}
+
+/* .personalBox{
   display: flex;
   display: -webkit-flex;
   align-items:center;
@@ -271,11 +301,10 @@
   flex: 1 1 33.33%;
   text-align: center;
   font-size: 12px;
-  
 }
 .personalBox li img{
   width: 32px;
-}
+} */
 /* 滑动验证 */
 .slideTop{
   margin-top: 5px;

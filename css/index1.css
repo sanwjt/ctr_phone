@@ -924,3 +924,31 @@
   padding-right: 32px;
   background-color: #fff;
 }
+
+/* 只能家电 */
+.smartTv .card{
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.smartTv .subject li{
+ padding-top: 18px;
+ padding-bottom: 18px;
+ border-bottom: 1px solid rgba(0,0,0,0.06);;
+ display: flex;
+ align-items: center;
+}
+
+.smartTv .subject li input{
+  margin-right: 6px;
+}
+.smartTv .subject li .num{
+  color:#9B9B9B;
+  font-size: 16px;
+}
+.smartTv .subject li .type{
+  margin-left: 6px;
+  margin-right: 6px;
+  display: inline-block;
+  color: #FF8720;
+}
+

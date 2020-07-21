@@ -16,6 +16,15 @@ body {
 .fz32{
     font-size: 16px;
 }  
+/* 超链接颜色 */
+.alink{
+  color: #000;
+  display: block;
+}
+.alinkwhite{
+  color: #fff;
+  display: block;
+}
 /* 字号 */
 /* 主题中字号 */
 .lg-fontsize{

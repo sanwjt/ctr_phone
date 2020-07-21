@@ -70,6 +70,11 @@
 }
 
 /* 帮助反馈 */
+.helpTop{
+  width: 100%;
+  height: 12px;
+  background: rgb(229, 229, 229);
+}
 .help{
   padding:19px 32px 45px;
   margin-top: 12px;
@@ -131,8 +136,12 @@
 .login{
   position: relative;
 }
+.loginh4{
+  margin-bottom: 35px;
+}
 .topImg{
-  width: 360px;
+  width: 96.5%;
+  position: relative;
 }
 .topImg img{
   width: 100%;
@@ -140,16 +149,16 @@
 }
 .goRegister{
   position: absolute;
-  right: 8px;
+  right: 0px;
   top: 8px;
 }
+
 .loginTitle{
   padding:0 16px;
   margin-top:-100px;
 }
 .loginPhonebox{
   padding:0 16px;
-  margin-top: 63px;
 }
 .loginPhonebox input{
   font-size: 16px;
@@ -173,6 +182,9 @@
   color:#fff;
 }
 /* 个人中心 */
+.satementsa{
+  display: block;
+}
 .personalTop{
   width: 375px;
   height: 227px;
@@ -244,6 +256,10 @@
   background: url(../img/silver-bg.png);
   background-size: 100% 100%;
 }
+.beana{
+  color:#000;
+  display: block;
+}
 .beanBox{
   width: 343px;
   height: 93px;
@@ -306,8 +322,50 @@
   width: 32px;
 } */
 /* 滑动验证 */
-.slideTop{
-  margin-top: 5px;
+
+.slide{
+  width: 343px;
+  position: relative;
+  height: 44px;
+  margin-top: 10px;
+  border:1px solid #D1CED1;
+}
+.iconToright{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 44px;
+  height: 43px;
+  border-left:none;
+  border:1px solid #D1CED1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-flex;
+}
+.iconToright img{
+  width: 20px;
+  height: 26px;
+
+}
+.login_yzm{
+  padding:49px 32px;
+}
+.slideText{
+  width: 299px;
+  height: 43px;
+  line-height: 43px;
+  background: #F7F7F7;
+  border:1px solid #D1CED1;
+  display: inline-block;
+  margin-left: 46px;
+  text-align: center;
+  border-left:0;
+  color: #FF8721;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .changeImg{
   position: relative;
@@ -337,9 +395,28 @@
   border-left: 1px solid #9B9B9B;
 }
 /* 快速登陆 */
-.quick-btn{
+
+.go{
+  width: 21px;
+  height: 24px;
+  margin-right: 20px;
+
+}
+.quick-btn-yzed{
   color: #FF8720;
   background: #FEF2E5;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+.quick-btn-yz{
+  color: #FF8720;
+  background: #F7F7F7;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
 }
 .quick-login{
   color:#000;
@@ -381,7 +458,6 @@
 .accunt_tips1{
   font-weight:150;
   color:#000;
-  height: 37.5px;
   background: #F6F7F8;
   font-size: 14px;
   padding:19px 32px;
@@ -390,6 +466,7 @@
      flex-wrap: nowrap;
      justify-content: center;
      display: -webkit-flex;
+     padding-bottom: 15px;
 }
 .solve img{
   width: 128px;
@@ -460,6 +537,10 @@
   margin: 10px 0;
 }
 /* 站内信 */
+.zhanneixina{
+  color:#000;
+  display: block;
+}
 .message{
   background:#F6F7F8;
   margin-top: 12px;
@@ -538,6 +619,9 @@
   padding:24px 32px;
   line-height: 24px;
 }
+.announcement ul li a{
+  color:#000;
+}
 .announcement_ctn{
   display: flex;
   flex-wrap: nowrap;
@@ -571,6 +655,10 @@
 .zhucea{
   color:#fff;
   display: block;
+}
+.login_yzmtips{
+  color:#FF8720;
+  text-align: left;
 }
 /* 注册验证码 */
 .register_yzmbox{
@@ -770,6 +858,10 @@
 }
 
 /* 信用等级 */
+.levala{
+  color:#fff;
+  display: block;
+}
 .credit .description{
   font-size: 16px;
   line-height: 32px;

@@ -13,6 +13,27 @@
 }
 
 /* 认证信息 */
+.certification{
+  padding:0 32px;
+  background: #fff;
+}
+/* 实名认证 */
+.shiming-tips{
+  margin-top: 13px;
+}
+.shimingImg{
+  width: 197px;
+  height:138px;
+  background: blue;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  margin:14px auto 0;
+}
+.shimingbtn{
+  margin-top: 24px;
+}
 .certification h4{
   width:375px;
   height:60px;
@@ -28,7 +49,6 @@
 .certification_tips1{
   font-weight:150;
   color:rgba(241,73,85,1);
-  height: 14px;
   background: #F6F7F8;
   font-size: 14px;
   padding:19px 32px;
@@ -41,11 +61,7 @@
   font-size: 14px;
   padding:19px 32px;
 }
-.choose{
-  padding:0 32px;
-  background: #fff;
 
-}
 .input_box{
   height: 54px;
   line-height: 54px;
@@ -163,7 +179,7 @@
 .loginPhonebox input{
   font-size: 16px;
   height: 30px;
-  width: 343px;
+  width: 100%;
   color:#9B9B9B;
   border-bottom:1px solid #666;
   margin:24px 0;
@@ -452,13 +468,13 @@
   text-align: center;
 }
 /* 账号 */
-.accunt{
+.account{
   margin-top:12px;
 }
-.accunt_tips1{
+.accuntConfig{
   font-weight:150;
   color:#000;
-  background: #F6F7F8;
+  background: #fff;
   font-size: 14px;
   padding:19px 32px;
 }
@@ -644,18 +660,19 @@
   padding:0 16px;
   margin-top:-100px;
 }
+.register_phonebox{
+  margin-bottom: 30px;
+}
 .register_phonebox input{
   font-size: 16px;
-  height: 30px;
-  width: 343px;
+  width: 100%;
   color:#9B9B9B;
   border-bottom:1px solid #666;
-  margin:24px 0;
 }
-.zhucea{
-  color:#fff;
-  display: block;
+.zhuce-phone{
+  margin-bottom: 60px;
 }
+
 .login_yzmtips{
   color:#FF8720;
   text-align: left;
@@ -665,16 +682,9 @@
   padding:0 16px;
   margin-top:-100px;
 }
-.register_phonebox input{
-  font-size: 16px;
-  height: 30px;
-  width: 343px;
-  color:#9B9B9B;
-  border-bottom:1px solid #666;
-  margin:24px 0;
-}
+
 .sent{
-  margin-bottom:45px;
+  margin:12px 0 45px 0;
 }
 .sent span{
   color:#9B9B9B;
@@ -765,15 +775,18 @@
 
 /* 注销 */
 .cancellation{
-  padding:121px 20px;
+  padding:121px 23px 278px 32px;
   text-align: center;
 }
-.cancellation_tips{
+.cancellation-tips{
   margin-bottom:24px;
 }
-.cancellation_warnning{
+.cancellation-warnning{
   color:#F14955;
   margin-bottom:24px;
+}
+.cancellation-btn{
+  margin-left:0px;
 }
 
 /* 会员等级 */

@@ -77,8 +77,22 @@ body {
 }
 
 /* 灰色系 */
-.boder-bg{
-    background: #F0F0F0;
+::-webkit-input-placeholder{/*Webkit browsers*/
+  　　　　color:#9B9B9B;
+}
+  　　　　:-moz-placeholder{/*Mozilla Firefox 4 to 8*/
+    　　　　color:#9B9B9B;
+  　　　　}
+  　　　　::moz-placeholder{/*Mozilla Firefox 19+*/
+    　　　　color:#9B9B9B;
+  　　　　}
+  　　　　:-ms-input-placeholder{/*Internet Explorer 10+*/
+    　　　　color:#9B9B9B;
+
+  　　　　}
+.boder-bt-bg{
+    border-bottom: 1px solid #f0f0f0;
+    font-weight:lighter;
 }
 .content-bg{
     background: #F7F6F9;
@@ -87,19 +101,28 @@ body {
 .text-placeholder{
     color:#9B9B9B;
 }
+.btn-ed{
+  background: #D4D5D6;
+}
 
 /* 红色系 */
 .text-wranning{
     color:#FF001F;
+    margin:8px 0;
 }
 .text-tips{
     color:#F14955;
 }
-
+.warnning-bg{
+  background:#F14955;
+}
 .artile{
     color:#764319;
 }
-
+/* 间距 */
+.mb30{
+  margin-bottom: 30px;
+}
 
 /* 顶部 */
 header{

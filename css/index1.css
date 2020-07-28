@@ -3,13 +3,14 @@
   padding:60px 20px 2400px;
   text-align: center;
 }
-.sefety_avatar{
+.sefety-avatar{
   width: 120px;
   margin:0 auto;
   margin-bottom: 24px;
 }
-.safety_tips{
+.safety-tips{
   margin-bottom: 24px;
+  line-height: 30px;
 }
 
 /* 认证信息 */
@@ -46,27 +47,18 @@
   color:rgba(0,0,0,1);
   border-bottom: 1px solid #E7E8E9;
 }
-.certification_tips1{
+.certificationTips{
   font-weight:150;
-  color:rgba(241,73,85,1);
-  background: #F6F7F8;
-  font-size: 14px;
-  padding:19px 32px;
-}
-.certification_tips2{
-  font-weight:150;
-  color:#000;
-  height: 37.5px;
   background: #F6F7F8;
   font-size: 14px;
   padding:19px 32px;
 }
 
-.input_box{
+
+.inputBox2{
   height: 54px;
   line-height: 54px;
   font-size: 14px;
-  border-bottom: 1px solid #f0f0f0;
   display:flex;
   flex-wrap: nowrap;
   justify-content:space-between;
@@ -92,11 +84,11 @@
   background: rgb(229, 229, 229);
 }
 .help{
-  padding:19px 32px 45px;
+  padding:19px 32px 90px;
   margin-top: 12px;
   background-color: #fff;
 }
-.help ul li{
+/* .help ul li{
   border-bottom:1px solid #F0F0F0;
   height: 52px;
   line-height: 52px;
@@ -105,7 +97,7 @@
   justify-content:space-between;
   align-items:center;
   display: -webkit-flex;
-}
+} */
 .help ul li label{
   font-size: 16px;
   font-weight: 300;
@@ -135,7 +127,7 @@
   top: 48.5px;
 }
 /* 修改手机号 */
-.change_phone{
+.changePhone{
   padding:10px 32px;
 }
 .phone_num input{
@@ -152,8 +144,11 @@
 .login{
   position: relative;
 }
-.loginh4{
-  margin-bottom: 35px;
+.login-way{
+  color:#000;
+  margin-top:18px;
+  font-size: 16px;
+  text-align: center;
 }
 .topImg{
   width: 96.5%;
@@ -176,13 +171,25 @@
 .loginPhonebox{
   padding:0 16px;
 }
-.loginPhonebox input{
+.inputBox{
+  position: relative;
+  margin-top:24px;
+
+ 
+}
+.inputBox input{
   font-size: 16px;
   height: 30px;
   width: 100%;
-  color:#9B9B9B;
-  border-bottom:1px solid #666;
-  margin:24px 0;
+  color:#000;
+  border-bottom:1px solid #f0f0f0;
+  font-weight: lighter;
+
+ 
+}
+.login-input input {
+  border-bottom: 1px dashed #666;
+  
 }
 .forgetLogin{
   display: flex;
@@ -365,7 +372,7 @@
   height: 26px;
 
 }
-.login_yzm{
+.loginYzmbox{
   padding:49px 32px;
 }
 .slideText{
@@ -406,7 +413,7 @@
   width: 113px;
   position: absolute;
   right: 0;
-  bottom: 32px;
+  bottom: 6px;
   text-align: center;
   border-left: 1px solid #9B9B9B;
 }
@@ -419,12 +426,9 @@
 
 }
 .quick-btn-yzed{
-  color: #FF8720;
-  background: #FEF2E5;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: center;
-  align-items: center;
+  color: #FF8720!important;
+  background: #FEF2E5 !important;
+  
 }
 .quick-btn-yz{
   color: #FF8720;
@@ -433,26 +437,20 @@
   display: -webkit-flex;
   justify-content: center;
   align-items: center;
-}
-.quick-login{
-  color:#000;
-  margin-top: 20px;
-  text-align: center;
-}
-.quick-logina{
-  color:#000;
-  text-align: center;
-  margin-top: 20px;
-}
-.login-yz{
+  margin-top: 30px;
   position: relative;
 }
+
+
+/* .login-yz{
+  position: relative;
+} */
 .countdown{
   width: 113px;
   position: absolute;
   right: 0;
   color: #9B9B9B;
-  bottom: 32px;
+  bottom: 6px;
   text-align: center;
   border-left: 1px solid #9B9B9B;
 }
@@ -656,30 +654,21 @@
 
 /* 注册 */
 /* 绑定手机号 */
-.register_phonebox{
-  padding:0 16px;
-  margin-top:-100px;
-}
-.register_phonebox{
-  margin-bottom: 30px;
-}
-.register_phonebox input{
+
+/* .registerPhonebox input{
   font-size: 16px;
   width: 100%;
   color:#9B9B9B;
   border-bottom:1px solid #666;
-}
-.zhuce-phone{
-  margin-bottom: 60px;
-}
+} */
 
-.login_yzmtips{
+
+.loginYzmtips{
   color:#FF8720;
   text-align: left;
 }
 /* 注册验证码 */
-.register_yzmbox{
-  padding:0 16px;
+.registerYzmbox{
   margin-top:-100px;
 }
 
@@ -691,10 +680,10 @@
   margin-right: 12px;
   display: inline-block;
 }
-.yzm_num{
+.yzm-num{
   margin-bottom: 30px;
 }
-.yzm_num span{
+.yzm-num span{
   width: 47.15px;
   display: inline-block;
   text-align: center;
@@ -711,19 +700,19 @@
   color:#fff;
 }
 /* 注册完善 */
-.register_complete{
+.registerComplete{
   padding:45px 16px 0;
   text-align: center;
 }
-.register_avatar{
+.register-avatar{
   width: 120px;
   margin:0 auto;
 }
-.register_completebox{
+.register-completebox{
   margin-bottom: 24px;
   overflow: hidden;
 }
-.register_completebox .answerList{
+.register-completebox .answerList{
   height: 45px;
   line-height: 45px;
   text-align: left;

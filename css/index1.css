@@ -1330,3 +1330,231 @@
   color: #FF8720;
 }
 
+/* 兑换记录 */
+.changeRecord{
+  padding: 0 32px 60px 32px;
+}
+.changeRecord .changeList .changeItem{
+  padding-bottom: 18px;
+  padding-top: 18px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  font-size: 16px;
+
+}
+.changeRecord .changeList .changeItem section{
+  padding-right: 24px;
+  background: url(../img/right.png) no-repeat right center;
+  display: flex;
+  background-size: 18px;
+}
+.changeRecord .changeList .changeItem section.down{
+  background: url(../img/down.png) no-repeat right center;
+  background-size: 18px;
+}
+.changeRecord .changeList .changeItem section .changeContent{
+  flex: 1;
+}
+
+.changeRecord .changeList  .listLeft{
+  text-align: left;
+}
+.changeRecord .changeList  .listLeft p{
+  font-weight: 500;
+}
+.changeRecord .changeList  .listLeft span{
+  color:#FF8720;
+  font-weight: 500;
+  display: inline-block;
+  padding-right: 28px;
+}
+
+.changeRecord .changeList  .listLeft span.dou{
+ background: url(../img/jindou-org.png) no-repeat right center;
+ background-size: 24px;
+}
+.changeRecord .changeList  .listLeft span.cash{
+  background: url(../img/cash.png) no-repeat right center;
+  background-size: 24px;
+}
+
+.changeRecord .changeList .listRight{
+  text-align: right;
+}
+
+.changeRecord .changeList .listRight span{
+  color:#9B9B9B;
+}
+
+.changeRecord .changeList .listRight p{
+  font-weight: 500;
+}
+.changeRecord .changeList .listRight p.error{
+  color:#F14955;
+}
+.changeRecord .changeList .listRight p.waring{
+  color:#FF8720
+}
+.changeRecord .changeList .listRight p.success{
+  color:#5CBA58
+}
+.changeRecord .changeList .mainTime{
+  width: 100%;
+  margin-top: 19px;
+  position: relative;
+}
+.changeRecord .changeList .mainTime li{
+  height: 16px;
+  line-height: 16px;
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 24px;
+}
+.changeRecord .changeList .mainTime li:last-child{
+  margin-bottom: 0;
+}
+
+.changeRecord .changeList .mainTime li .raduis{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #9B9B9B;
+  position: absolute;
+  left: -0.5px;
+  top:50%;
+  transform: translate(0,-50%);
+}
+.changeRecord .changeList .mainTime li.active{
+  color:#FF8720
+}
+
+.changeRecord .changeList .mainTime li.active .raduis{
+  background: #FF8720;
+}
+
+.changeRecord .changeList .mainTime .line{
+  position: absolute;
+  width: 1px;
+  border-left:1px dashed #9B9B9B;
+  left: 4px;
+}
+
+/* 兑换 */
+.exchangeBoxs{
+  padding: 13px 16px 60px 16px;
+}
+.exchangeBoxs .prizeCom{
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.exchangeBoxs .prizeCom .prizeleft{
+  flex: 1;
+}
+
+.exchangeBoxs .prizeCom .prizeleft p{
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 18px; */
+}
+
+.exchangeBoxs .prizeCom .prizeleft .num{
+  display: inline-block;
+  padding-right: 48px;
+  font-size: 34px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.exchangeBoxs .prizeCom .prizeleft img{
+  width: 12px;
+}
+
+.exchangeBoxs .prizeCom .prizeright{
+  flex: 1;
+  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.exchangeBoxs .prizeCom .prizeright a{
+  display:inline-block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #000;
+}
+
+.exchangeBoxs .prizeCom.dou{
+  height: 108px;
+  background: url(../img/doubg.png) no-repeat;
+  background-size:contain;
+  margin-bottom: 12px;
+}
+
+.exchangeBoxs .prizeCom.cash{
+  height: 140px;
+  background: url(../img/cashbg.png) no-repeat;
+  background-size: contain;
+}
+.exchangeBoxs .rule{
+  font-size: 16px;
+  line-height: 30px;
+  text-align:justify;
+  /* justify-content:; */
+}
+
+/* 大转盘 */
+.zhuanpan{
+  background: url(../img/zhuannpanbg.png) no-repeat;
+  background-size:cover;
+  padding-top: 15px;
+}
+.zhuanpan .head{
+  height: 114px;
+  background: url(../img/zptitle.png) no-repeat center center;
+  background-size: contain;
+}
+.zhuanpan .ruleBox{
+  padding:24px;
+}
+
+.zhuanpan .ruleBox .ruleContent{
+  background-color: #E33F40;
+  border-radius: 10px;
+  padding: 20px 15px;
+}
+
+.zhuanpan .ruleBox .ruleContent .title{
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+}
+.zhuanpan .ruleBox .ruleContent p{
+  font-size: 15px;
+  line-height: 25px;
+  /* font-weight:bold; */
+  color: #fff;
+  text-align: justify;
+}
+
+.zhuanpan  .zhSel{
+  height: 398px;
+  background: url(../img/selbg.png) no-repeat center center;
+  background-size: 100%;
+}
+
+.zhuanpan  .zhSel .zhSelbg{
+  width: 280px;
+  height: 280px;
+  background: url(../img/yuanpan.png) no-repeat center center;
+  background-size: 100%;
+  margin-top: 24.5px;
+}

@@ -1,0 +1,46 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-08-03 21:10:00
+ * @LastEditTime: 2020-08-05 00:18:37
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /ctr_phone/兑换.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover,user-scalable=no">
+  <title>订阅信息</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index1.css">
+  <link rel="stylesheet" href="lib/switch/honeySwitch.css">
+</head>
+<body>
+  <div class="subscribe">
+    <ul>
+      <li>
+          邮件订阅
+          <span class="switch-off" themeColor="#FF8720"></span>
+     </li>
+      <li>
+          短信通知
+          <span class="switch-off" themeColor="#FF8720"></span>
+    </li>
+      <li>
+          微信消息
+          <span class="switch-off" themeColor="#FF8720"></span>
+    </li>
+    </ul>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="lib/switch/honeySwitch.js"></script>
+  <script>
+      $(function(){
+        //   switch 切换
+        //   具体参考http://www.jq22.com/demo/honeySwitch201702072307/
+          $('.switch-off').css({zoom:0.8})
+      })
+  </script>
+</body>
+</html>

@@ -113,12 +113,16 @@ body {
 .text-tips{
     color:#F14955;
 }
+.text-success{
+  color:#43B03E
+}
 .warnning-bg{
   background:#F14955;
 }
 .artile{
     color:#764319;
 }
+.text
 /* 间距 */
 .mb30{
   margin-bottom: 30px;

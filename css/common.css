@@ -119,13 +119,19 @@ body {
 .warnning-bg{
   background:#F14955;
 }
-.artile{
+.bussiness-successcolor{
     color:#764319;
 }
 .text
 /* 间距 */
 .mb30{
   margin-bottom: 30px;
+}
+.mt40{
+  margin-top: 40px;
+}
+.mt10{
+  margin-top: 10px;
 }
 
 /* 顶部 */

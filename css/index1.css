@@ -108,23 +108,424 @@
   right:32px;
   width: 72px;
 }
+/* 推荐好友 */
+.recommendBox{
+  width: 100%;
+  height: 100%;
+  background: #D599FF;
+}
+.recommendWelfare{
+  width: 316.5px;
+  height: 195px;
+  position: absolute;
+  top:340px;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 111;
+ 
+}
+.recommendTitle{
+  position: absolute;
+  top: 0px;
+  color:#fff;
+  font-size: 20px;
+  left:50%;
+  transform: translateX(-50%);
+  
+}
+.recommendQuan{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.recommendLeft,.recommendRight{
+  width: 122px;
+  color: #BD83FC;
+  text-align: center;
+  font-size: 15px;
+}
+.recommendLeft,.recommendRight p:nth-child(2){
+  width: 154.5px;
+}
+.recommendLeft,.recommendRight p:nth-child(1){
+  width: 120.5px;
+}
+.recommendAdd{
+  width: 19.5px;
+  height: 19.5px;
+}
+.recommend-peo{
+  position: absolute;
+  z-index: 11;
+  top:8px;
+  width: 100%;
+}
+.connection{
+  position: absolute;
+  width: 316.5px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1111;
+  top:530px;
+  transform: translateX(-50%);
+  left: 50%;
 
+}
+.connection img{
+  width: 18px;
+  height: 53px;
+}
+.recommandWay{
+  width: 345px;
+  height: 509.5px;
+  background:#4E188A;
+  border-radius: 10px;
+  left:50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top:565px;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; 
+  color:#fff;
+}
+.connection2{
+  top:1058px;
+}
+.recommandInvite{
+  width: 345px;
+  height: 379px;
+  background:#4E188A;
+  border-radius: 10px;
+  left:50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top:1090px;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; 
+}
+.invetescTitle{
+  width: 317.5px;
+  height: 31px;
+  background: url(../img/yellow-bg.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:49.5px;
+  left:50%;
+  transform: translateX(-50%);
+}
+.invetescTitleinner img{
+  width: 140px;
+  height: 32px;
+  background: url(../img/purple3-bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+.connection3{
+  top:1448px;
+}
+
+.recommandRule{
+  width: 345px;
+  height: 315px;
+  background:#4E188A;
+  border-radius: 10px;
+  left:50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top:1482px;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; 
+  color:#fff;
+  padding: 45px 20px 0;
+  font-size: 15px;
+}
+.recommandRule ul li{
+  list-style-type:disc;
+}
+.recommandRule ul li ol li{
+  list-style-type: decimal!important;
+  color:#BD83FC;
+}
 /* 商业调查 */
 .business{
   position: absolute;
   width: 100%;
   height: 100%;
   background: url(../img/business-bg.png) no-repeat;
+
 }
-.business_title{
+.business-title{
+  position: absolute;
+  left: 20.5px;
+  top: 29px;
+  width: 179px;
+}
+.business-tips1{
   position: absolute;
   left: 20px;
-  top: 48.5px;
+  top: 96px;
+  color:#fff;
 }
-.business_tips{
+.business-tips2{
   position: absolute;
   left: 20px;
-  top: 48.5px;
+  top: 119px;
+  color:#fff;
+  
+}
+.bussiness-prizebtn{
+  width: 105px;
+  height: 44px;
+  line-height: 44px;
+  line-height: 44px;
+  background: url(../img/btn-bg.png) no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  position: absolute;
+  top:140px;
+  left:20px;
+}
+
+.invate-box-sm{
+  width: 375px;
+  background-size: 100% 100%;
+  position: absolute;
+  top:200px;
+  height: 216px;
+  background:url(../img/invate-box-sm.png) no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.invate-box-lg{
+  width: 345px;
+  background-size: 100% 100%;
+  position: absolute;
+  top:400.5px;
+  height: 403px;
+  background:url(../img/invate-box-lg.png) no-repeat;
+  background-size: 100% 100%;
+  /* background: pink; */
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.invate-box-lg ul li{
+  width: 296.5px;
+  margin:0 auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.invate-box-t1{
+  width: 293px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 12px;
+  margin-top: 18px;
+}
+.invate-box-h{
+  font-weight: bold;
+  font-size: 17px;
+  width: 293px;
+  margin: 0 auto;
+  margin-top: 25.5px;
+}
+.invate-box-t2{
+  font-size: 15px;
+  width: 293px;
+  margin: 0 auto;
+  margin-top: 2.5px;
+
+}
+.bussiness-input{
+  width: 296.5px;
+  height: 37px;
+  line-height: 37px;
+  border:1px dashed #ccc;
+  justify-content:space-between;
+  display: flex;
+  display: -webkit-flex;
+  color:#AFAFAF;
+  background: #F3F0F3;
+  font-size: 15px;
+}
+.bussiness-input span{
+  width: 80.65px;
+  height: 37px;
+  background: #FE8833;
+  color:#fff;
+  text-align: center;
+  
+}
+
+.bussiness-wx{
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top:500px;
+  left:50%;
+  top:820px;
+  transform: translateX(-50%);
+}
+.bussness-more{
+  color:#fff;
+  width: 272.5px;
+  height: 40px;
+  position: absolute;
+  top:980px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.bussiness-jindou{
+  width:81px;
+  height: 30px;
+  line-height: 30px;
+  background: #FE8833;
+  border-radius: 20px;
+  color:#fff;
+  text-align: center;
+  margin:10px 0 ;
+  z-index: 11;
+}
+/* 商业调查-配额满 */
+.bs-icon-jd{
+  position: absolute;
+  top:144px;
+  right: 0;
+  width: 113.5px;
+}
+.bussiness-sorry{
+  position: absolute;
+  top:30px;
+  left:50%;
+  transform: translateX(-50%);
+  width: 96px;
+}
+.business-full-p1{
+  position: absolute;
+  top:75px;
+  left:50%;
+  transform: translateX(-50%);
+  color: #038EE4;
+  font-weight: lighter;
+  font-size: 19px;
+  width: 331px; 
+}
+.business-full-p2{
+  position: absolute;
+  top:109px;
+  left:50%;
+  transform: translateX(-50%);
+  color: #FD8733;
+  font-weight: bold;
+  font-size: 19px;
+}
+.business-full-p3{
+  position: absolute;
+  top:143px;
+  left:50%;
+  transform: translateX(-50%);
+  color: #038EE4;
+  font-weight: bold;
+  font-size: 19px;
+}
+.invate-full-box1{
+  position: absolute;
+  top:210px;
+  left:50%;
+  transform: translateX(-50%);
+  color: #000;
+  font-size: 15px;
+  width: 360px;
+  height: 174px;
+  background: url(../img/fullinvate-box-sm.png) no-repeat;
+  background-size: 100% 100%;
+}
+.invate-full-box2{
+  position: absolute;
+  top:384.5px;
+  left:50%;
+  transform: translateX(-50%);
+  color: #000;
+  font-size: 15px;
+  width: 360px;
+  height: 418.5px;
+  background: url(../img/fullinvate-box-lg.png) no-repeat;
+  background-size: 100% 100%;
+}
+.invate-full-box2 ul li {
+  width: 296.5px;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 活动 */
+.activityBox{
+  padding:15px;
+}
+.activityBox li{
+  width: 330px;
+  height: 155.5px;
+  background: url(../img/li1.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content:left;
+  align-items: center;
+}
+.activityBox li:nth-child(2){
+
+  background: url(../img/li2.png) no-repeat;
+  background-size: 100% 100%;
+
+}
+.activityBox li:nth-child(3){
+
+  background: url(../img/li3.png) no-repeat;
+  background-size: 100% 100%;
+
+}
+.activityLeft{
+  width: 139.5px;
+  height: 136.5px;
+}
+.activityRight{
+  color:#fff;
+  font-size: 15px;
+}
+.activityRight h4{
+  font-size: 20px;
+}
+.activityRight .activity-end1{
+  font-size: 13px!important;
+  border-radius: 10px;
+  background: #F7720E;
+  padding:0 6.5px;
+}
+.activityRight .activity-end2{
+  background: #6A24C1;
+  font-size: 13px!important;
+  border-radius: 10px;
+  padding:0 6.5px;
+}
+.activityRight .activity-end3{
+  background: #DC191D;
+  font-size: 13px!important;
+  border-radius: 10px;
+  padding:0 6.5px;
 }
 /* 修改手机号 */
 .changePhone{
@@ -138,6 +539,7 @@
   font-size: 16px;
   margin-bottom: 20px;
   border-bottom: 1px solid #9B9B9B;
+
   ;
 }
 /* 登录 */

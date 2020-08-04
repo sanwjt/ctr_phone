@@ -1171,14 +1171,17 @@
 
 .zhuanpan  .zhSel{
   height: 398px;
-  background: url(../img/selbg.png) no-repeat center center;
+  /* background: url(../img/selbg.png) no-repeat center center; */
   background-size: 100%;
 }
 
 .zhuanpan  .zhSel .zhSelbg{
   width: 280px;
   height: 280px;
-  background: url(../img/yuanpan.png) no-repeat center center;
+  /* background: url(../img/yuanpan.png) no-repeat center center; */
   background-size: 100%;
-  margin-top: 24.5px;
+  margin-top: 24.5px; 
+  background-color: black;
+  position: relative;
+  margin: 0 auto;
 }

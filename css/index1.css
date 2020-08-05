@@ -366,16 +366,31 @@
   top:200px;
   left:50%;
   transform: translateX(-50%);
-  width: 345px;
-  display: flex;
+  width: 348px;
+  /* display: flex;
   display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+    align-items: center;*/
+  text-align: center;
+  
+
 }
 .signBoxinner li{
-  width: 124.5px;
-  height: 82.6px;
+  width: 82.6px;
+  height: 124.5px;
   background: #fff;
   border-radius: 10px;
   font-size: 14px;
+  float: left;
+  margin:2px 2px;
+  padding:2px 0;
+  box-sizing: border-box;
+}
+.signBoxinner li:nth-child(7){
+  width: 170px;
+  height: 124.5px;
+
 }
 .sign-btn{
   width: 345px;
@@ -390,6 +405,42 @@
   color:#fff;
   text-align: center;
   border-radius: 8px;
+}
+.sign-jindou5{
+  width:51.5px;
+  height: 50px;
+  display: block;
+}
+.sign-jindou10{
+  width: 83px;
+  height: 69px;
+  display: block;
+}
+.sign-jindou15{
+  width: 90px;
+  height: 80.5px;
+  display: block;
+}
+
+.sign-jindou20{
+  width: 98.5px;
+  height: 74.5px;
+  display: block;
+}
+.sign-jindou25{
+  width: 96.5px;
+  height: 72px;
+  display: block;
+}
+.sign-jindou30{
+  width: 96.5px;
+  height: 83px;
+  display: block;
+}
+.sign-jindou35{
+  width: 83px;
+  height: 61px;
+  display: block;
 }
 /* 商业调查 */
 .business{

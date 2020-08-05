@@ -191,6 +191,71 @@
   -webkit-box-sizing:border-box; 
   color:#fff;
 }
+.recommandWaybox{
+  position: absolute;
+  top:40px;
+  width: 317px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+}
+.recommenTitlebg{
+  width: 121px;
+  height: 31px;
+  line-height: 31px;
+  background: url(../img/purple1-bg.png) no-repeat;
+  background-size: 100% 100%;
+  padding-left: 8px;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; 
+  color:#4E188A;
+  margin:10px 0;
+}
+.recommandWaytips{
+  color:#fff;
+  margin:0 0 15px;
+}
+.recomend-input{
+  width: 316.5px;
+    height: 37px;
+    line-height: 37px;
+    border: 1px dashed #ccc;
+    justify-content: space-between;
+    display: flex;
+    display: -webkit-flex;
+    color: #4E188A;
+    background: #F3F0F3;
+    font-size: 15px;
+
+}
+.recomend-input span{
+  background: #FFB430;
+  padding:0 10px;
+}
+.recommend-wx{
+  position: absolute;
+  top: 260px;
+  width: 121px;
+  height: 121px;
+  background: url(../img/recommand-ewm.png) no-repeat;
+  background-size: 100% 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.download-btn{
+  width: 316.5px;
+  height: 37px;
+  line-height: 37px;
+  background: #FFB430;
+  color:#4E188A;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  top:396px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .connection2{
   top:1058px;
 }
@@ -216,12 +281,54 @@
   top:49.5px;
   left:50%;
   transform: translateX(-50%);
+  color:#4E188A;
+  font-size: 15px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
 }
-.invetescTitleinner img{
+.invetescTitleinner{
   width: 140px;
   height: 32px;
+  line-height: 32px;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; 
+  padding-left: 10px;
   background: url(../img/purple3-bg.png) no-repeat;
   background-size: 100% 100%;
+}
+.inveterscBox{
+  position: absolute;
+  top:100px;
+  width: 316.5px;
+  height: 247px;
+  background: #fff;
+  left:50%;
+  transform: translateX(-50%);
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; 
+  padding: 14.5px 15px;
+  overflow-y: scroll;
+  
+}
+.inveterscBox li{
+  border-bottom: 0.1px solid #F0F0F0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  color:#4E188A;
+  font-size: 15px;
+  align-items: center;
+  padding-bottom: 14.5px;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; 
+}
+.interscRight{
+  color:#FFB430;
+  font-weight: bold;
 }
 .connection3{
   top:1448px;
@@ -240,15 +347,49 @@
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box; 
   color:#fff;
-  padding: 45px 20px 0;
+  padding: 45px 20px 0 27px;
   font-size: 15px;
 }
 .recommandRule ul li{
   list-style-type:disc;
 }
+.recommandRule ul li ol{
+  margin-bottom: 15px;
+}
 .recommandRule ul li ol li{
-  list-style-type: decimal!important;
+  list-style-type: none!important;
   color:#BD83FC;
+}
+/* 天天签到 */
+.signBoxinner{
+  position: absolute;
+  top:200px;
+  left:50%;
+  transform: translateX(-50%);
+  width: 345px;
+  display: flex;
+  display: -webkit-flex;
+}
+.signBoxinner li{
+  width: 124.5px;
+  height: 82.6px;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.sign-btn{
+  width: 345px;
+  height: 48px;
+  line-height: 48px;
+  background: #AEACAB;
+  position: absolute;
+  top:500px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 17px;
+  color:#fff;
+  text-align: center;
+  border-radius: 8px;
 }
 /* 商业调查 */
 .business{

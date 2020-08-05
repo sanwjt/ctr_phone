@@ -409,7 +409,6 @@
 .signBoxinner li:nth-child(7){
   width: 170px;
   height: 124.5px;
-
 }
 .sign-btn{
   width: 345px;
@@ -1933,4 +1932,145 @@
   top: 50%;
   transform: translate(0,-50%);
   /* zoom: 0.8; */
+}
+
+/* 等级变动记录 */
+.leveRecordBox .leveRecord{
+  padding: 0 32px;
+}
+.leveRecordBox .leveRecord li{
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .06);
+}
+.leveRecordBox .leveRecord li .title{
+  font-size: 16px;
+  font-weight: 500;
+}
+.leveRecordBox .leveRecord li  .count{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 实名认证 */
+.realname{
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background: #FF8720;
+  padding: 24px 32px 60px 32px;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+.realname .header{
+  width: 311px;
+  height: 300px;
+  margin: 0 auto;
+  background: url(../img/shiming.png) no-repeat;
+  background-size: 100% 100%;
+}
+.realname .header .title{
+  height: 76px;
+  line-height: 76px;
+  text-align: center;
+  font-size: 16px;
+  border-bottom: 1px dashed rgba(0, 0, 0, .06);
+}
+.realname .header .title span{
+  font-weight: 500;
+}
+.realname .header .maskBox{
+  text-align: center;
+}
+.realname .header .maskBox img{
+  display: inline-block;
+  height: 131px;
+  width: 131px;
+  margin-top: 12px;
+}
+.realname .header .maskBox p{
+  width: 240px;
+  margin: 0 auto;
+}
+.realname .rules{
+  margin-top: 24px;
+}
+.realname .rules p{
+  color: #fff;
+  font-size: 14px;
+}
+.realname .wxinfo{
+  color: #fff;
+  font-size: 14px;
+  margin-top: 12px;
+  text-decoration: underline;
+}
+
+/* 反馈记录 */
+.feedback .nav{
+  display: flex;
+}
+.feedback .nav li{
+  flex: 1;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #9B9B9B;
+  background-color: #fff;
+}
+.feedback .nav li.active{
+  color:#000;
+  font-weight: 500;
+  border-bottom: 1px solid #FF8720;
+}
+
+.feedback .feedbackItem{
+  display: flex;
+  margin-top: 24px;
+}
+.feedback .feedbackItem .headIcon{
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  display: inline-block;
+  background: #ccc;
+  margin-right: 12px;
+}
+.feedback .feedbackItem .feedbackContent{
+  padding: 18px;
+  background: #fff;
+}
+.feedback .feedbackItem .feedbackContentout{
+  width: 81%  ;
+}
+.feedback  .feedbacklist{
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.feedback  .feedbackImglist{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.feedback  .feedbackImglist li{
+  width: 114px;
+  height: 72px;
+}
+.feedback  .feedbackImglist li img{
+  height: 100%;
+  width: 100%;
+}
+.feedback .feedbackItem.right{
+  flex-direction:row-reverse;
+}
+.feedback .feedbackItem .title{
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.feedback .feedbackItem span{
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 12px;
+  display: inline-block
 }

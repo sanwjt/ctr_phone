@@ -161,6 +161,7 @@ footer{
     bottom:0;
     padding-top: 10px;
     box-sizing: border-box;
+    z-index: 11111;
   }
   footer ul {
     display: flex;

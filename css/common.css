@@ -162,6 +162,7 @@ footer{
     padding-top: 10px;
     box-sizing: border-box;
     z-index: 11111;
+    background-color: #fff;
   }
   footer ul {
     display: flex;

@@ -2,24 +2,27 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover,user-scalable=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index1.css">
-	<title>注销账户</title>
+	<title>修改密码</title>
 </head>
 <body>
-   
-    <!-- 注销账户 -->   
-    <div class="cancellation">
-        <div class="cancellation-tips">您确定要注销<span>【138****8888】</span>这个账户吗？</div>
-        <div class="cancellation-warnning">注销后，现金和金豆记录清除，无法恢复</div>
-        <div class="cancellation-btn mid-btn"><a href="pwd_phone.html" class="alinkwhite">狠心注销</a></div>
-        <div class="cancellation-btn mid-btn warnning-bg">不注销了</div>
-
-    </div>   
- <!-- 底部悬浮 -->
- <footer>
+        <div class="changePhone">
+            <div class="inputBox mb30">
+                <input type="password" placeholder="请输入密码">
+            </div>
+            <div class="changePwdtips">由8-20位字母、数字或字符组成</div>
+            <div class="changePwdwaring">由8-20位字母、数字或字符组成</div>
+            <div class="inputBox mb30">
+                <input type="password" placeholder="请再次输入新密码">
+            </div>
+            <div class="mid-btn mt40">确定</div>  
+        </div>
+                   
+<!-- 底部悬浮 -->
+<footer>
     <ul>
         <li>
             <div><img src="img/question.png" alt=""></div>
@@ -39,11 +42,14 @@
         </li>
     </ul>
 </footer>
+   
+    
 <!-- 弹窗 -->
 <div class="fixed">
-    <div class="zhuxiaofixed">账户已注销</div>
+    <div class="zhuxiaofixed">修改成功</div>
     <img src="img/btn-close.png" alt="">
 </div>
+
 <script src="js/zepto.min.js"></script>
 <script>
 

@@ -18,9 +18,10 @@
         <!-- 注册完善信息 -->
         <div class="registerComplete" style="display: block;">
             <!-- 男头像 -->
-            <img class="register-avatar" src="img/avatar-male.png" alt="">
+            <img class="register-avatar active"  src="img/avatar-male.png" alt="">
             <!-- 女头像 -->
-            <!-- <img class="register-avatar" src="img/avatar-female.png" alt=""> -->
+            <img class="register-avatar" style="display: none;" src="img/avatar-female.png" alt="">
+
             <div class="register-completebox">
                 <div class="answerList">
                     <span><label for="">生日</label></span>
@@ -41,7 +42,7 @@
                 <div class="answerList">
                     <span><label for="">性别</label></span>
                     <div class="radioChoose" id="sex">
-                        <div class="radioItem">
+                        <div class="radioItem active">
                             <span><label for="">男</label></span>
                             <input type="radio" name="sex" value="1">
                             <span class="radiosex"></span>
@@ -116,8 +117,34 @@
                       cityArea();
                       $("#cityArea").unbind("touchstart");
                   // }
-              })
-  
+        })
+
+        $('.register-avatar').on('click',function(){
+            var index = $(this).index();
+            $(this).hide();
+            $('.radioItem').removeClass('active')
+            if(index === 0){
+                $('.register-avatar').eq(index+1).show();
+                $('.radioItem').eq(index+1).addClass('active')
+            }else{
+                $('.register-avatar').eq(index-1).show();
+                $('.radioItem').eq(index-1).addClass('active')
+            }
+        })
+        
+        $('.radioItem').on('click',function(){
+            var index = $(this).index();
+
+            $(this).addClass('active');
+            $('.register-avatar').hide();   
+            $('.register-avatar').eq(index).show();   
+
+            if(index === 1){
+                $('.radioItem').eq(index-1).removeClass('active')
+            }else{
+                $('.radioItem').eq(index+1).removeClass('active')
+            }
+        })
     })
   
   </script>

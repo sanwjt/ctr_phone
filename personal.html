@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-18 23:52:17
- * @LastEditTime: 2020-07-19 23:52:02
+ * @LastEditTime: 2020-08-06 23:50:18
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /ctr_phone/personal.html
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index1.css">
+    <link rel="stylesheet" href="lib/swiper/swiper.min.css">
 	<title>个人中心</title>
 </head>
 <body>
@@ -63,7 +64,19 @@
             </div>
         </div>
         <div class="lunboAds">
-            <img class="w100" src="img/lunbo.png" alt="">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="w100" src="img/lunbo.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="w100" src="img/lunbo.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="w100" src="img/lunbo.png" alt="">
+                  </div>
+                </div>
+              </div>
         </div>
         <ul class="personalBox">
             <li>
@@ -135,6 +148,13 @@
 </footer>
 
 <script src="js/zepto.min.js"></script>
-
+<script src="lib/swiper/swiper.min.js"></script>
+<script>
+    $(function(){
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 5000,//可选选项，自动滑动
+        })
+    })
+</script>
 </body>
 </html>

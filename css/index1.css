@@ -1273,6 +1273,10 @@
 .register-avatar{
   width: 120px;
   margin:0 auto;
+  display: none;
+}
+.register-avatar.active{
+  display: block;
 }
 .register-completebox{
   margin-bottom: 24px;
@@ -1289,6 +1293,10 @@
   justify-content:space-between;
   align-items:center;
   display: -webkit-flex;
+  font-size: 16px;
+  margin-top: 12px;
+}
+.register-completebox .answerList input{
   font-size: 16px;
 }
 .radioChoose{
@@ -1313,9 +1321,7 @@
 .radioChoose .radioItem input[type="radio"]{
 	opacity: 0;
 }
-.radioChoose .radioItem.active span{
-	background-image: url('../img/select-ed.png');
-}
+
 .radioChoose .radioItem .radiosex{
   display: inline-block;
 	vertical-align: middle;
@@ -1324,6 +1330,11 @@
 	background: url('../img/select.png') no-repeat center center/100%;
 	margin-right: 0.1rem;
 }
+
+.answerList .radioChoose .radioItem.active .radiosex{
+	background: url('../img/select-ed.png')  no-repeat center center/100%;
+}
+
 .passwordInput{
   margin-right: 50px;
 }

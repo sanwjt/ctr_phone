@@ -14,52 +14,96 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index1.css">
-	<title>已签到</title>
+	<title>签到</title>
 </head>
 <body>
 <!-- 已签到 -->
-        <div class="bussiness-bg"><img src="img/business-bg.png" alt=""></div>
-        
-            <ul>
+        <div class="signBox">
+            <img src="img/sign-bg.png" alt="">
+            <div class="signRule">规则</div>
+            <ul class="signBoxinner">
                 <li>
                     <p>第1天</p>
-                    <img src="img/" alt="" class="sign-jindou">
-                    <p>已领取</p>
+                    <p class="signBoxinnerct"><img src="img/jindou-5.png" alt="" class="sign-jindou5"></p>
+                    <p class="jindoucolor">5金豆</p>
                 </li>
                 <li>
-                    <p>第1天</p>
-                    <img src="img/" alt="" class="sign-jindou">
-                    <p>10金豆</p>
+                    <p>第2天</p>
+                    <p class="signBoxinnerct"><img src="img/jindou-10.png" alt="" class="sign-jindou10"></p>
+                    <p class="jindoucolor">10金豆</p>
                 </li>
                 <li>
-                    <p>第1天</p>
-                    <img src="img/" alt="" class="sign-jindou">
-                    <p>10金豆</p>
+                    <p>第3天</p>
+                    <p class="signBoxinnerct"><img src="img/jindou-15.png" alt="" class="sign-jindou15"></p>
+                    <p class="jindoucolor">15金豆</p>
                 </li>
                 <li>
-                    <p>第1天</p>
-                    <img src="img/" alt="" class="sign-jindou">
-                    <p>10金豆</p>
+                    <p>第4天</p>
+                    <p class="signBoxinnerct"><img src="img/jindou-20.png" alt="" class="sign-jindou20"></p>
+                    <p class="jindoucolor">20金豆</p>
                 </li>
                 <li>
-                    <p>第1天</p>
-                    <img src="img/" alt="" class="sign-jindou">
-                    <p>10金豆</p>
+                    <p>第5天</p>
+                    <p class="signBoxinnerct"><img src="img/jindou-25.png" alt="" class="sign-jindou25"></p>
+                    <p class="jindoucolor">25金豆</p>
                 </li>
                 <li>
-                    <p>第1天</p>
-                    <img src="img/" alt="" class="sign-jindou">
-                    <p>10金豆</p>
+                    <p>第6天</p>
+                    <p class="signBoxinnerct"><img src="img/jindou-30.png" alt="" class="sign-jindou30"></p>
+                    <p class="jindoucolor">30金豆</p>
                 </li>
                 <li>
-                    <p>第1天</p>
-                    <img src="img/" alt="" class="sign-jindou">
-                    <p>10金豆</p>
+                    <p>第7天</p>
+                    <p class="signBoxinnerct"><img src="img/jindou-35.png" alt="" class="sign-jindou35"></p>
+                    <p class="jindoucolor">35金豆</p>
                 </li>
                 
             </ul>
-            <div class="sign-btn">今日已签到</div>
-       
+            <!-- <div class="signed-btn">今日已签到</div> -->
+            <div class="sign-btn">点击签到</div>
+        </div>
+   <!-- 底部悬浮 -->
+ <footer>
+    <ul>
+        <li>
+            <div><img src="img/question.png" alt=""></div>
+            <div>问卷</div>
+        </li>
+        <li>
+            <div><img src="img/exchange.png" alt=""></div>
+            <div>兑换</div>
+        </li>
+        <li>
+            <div><img src="img/activity.png" alt=""></div>
+            <div>活动</div>
+        </li>
+        <li>
+            <div><img src="img/mine.png" alt=""></div>
+            <div>我的</div>
+        </li>
+    </ul>
+</footer>   
+<!-- 弹窗 -->
+<div class="fixed">
+    <!-- 抽奖绑定手机弹窗 -->
+    <div class="fixedInnder">
+        <p>为了账号积分安全 请先绑定手机</p>
+        <div class="fixedbtn">去绑定>></div>
+        <img src="img/btn-close.png" alt="">
+    </div>
+    <!-- 商业调查未完成弹窗 -->
+    <div class="fixedInnder">
+        <p>您有一个商业调查未完成 请先进行商业调查再签到</p>
+        <div class="fixedbtn">立即参与>></div>
+        <img src="img/btn-close.png" alt="">
+    </div>
+    <!-- 签到成功弹窗 -->
+    <div class="fixedInnder">
+        <img src="img/sign-top.png" alt="">
+        <p>成功领取35个金豆</p>
+        <img src="img/btn-close.png" alt="">
+    </div>
+</div>
 <script src="js/zepto.min.js"></script>
 <script src="js/flexible.js"></script>
 <script>

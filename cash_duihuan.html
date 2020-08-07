@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover,user-scalable=no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index1.css">
+	<title>兑换</title>
+</head>
+<body>
+    <!-- 现金兑换 -->
+       <div class="btn-dh">兑换</div>
+       <div class="changeBox">
+           <ul class="changeJindou">
+               <li>
+                   <span class="newuser">新用户专享</span>
+                   <div class="cash">¥1</div>
+               </li>
+               <li>
+                <div class="cash">¥1</div>
+            </li>
+            <li>
+                <div class="cash">¥1</div>
+            </li>
+            <li class="jindou-active">
+                <div class="cash">¥1</div>
+            </li>
+           </ul>
+           <div class="changeTowechat">     
+               <p class="changetowx"><img src="img/logo-wx.png" alt="" class="logo-wx">提现到微信零钱</p>
+               <img src="img/btn-nocheck.png" alt="" class="btn-checked">
+           </div>
+           <div class="changeTowechat">     
+            <p class="changetowx"><img src="img/logo-zfb.png" alt="" class="logo-wx">提现到支付宝<span class="text-tips">（10%手续费）</span></p>
+            <img src="img/btn-checked.png" alt="" class="btn-checked">
+        </div>
+           <div class="duihuangray"></div>
+       </div>
+        <div class="loginPhonebox">  
+            <form action="">
+                <div class="jddhBox"><sapn class="duihuanspan">微信昵称</sapn><input type="text" placeholder="请输入验证码"></div>  
+                <div class="jddhBox"><sapn class="duihuanspan">真实姓名</sapn><input type="text" placeholder="请输入真实姓名"></div>  
+                <div class="jddhBox"><sapn class="duihuanspan">手机号码</sapn><input type="text" placeholder="请输入手机号"></div>  
+                <div class="jddhBox jdflex">
+                    <sapn class="duihuanspan">滑动验证</sapn>
+                    <div class="slidedh">   
+                        <span class="iconToright"><img src="img/toDouble.png" alt="" class="iconTorightdh"></span>
+                        <span class="slideTextdh">拖动滑块进行验证</span>
+                    </div>
+                
+                        
+                
+                    </div>
+                <div class="jddhBox">
+                        <span>短信验证码</span><input type="text" placeholder="请输入验证码"><span class="get-yzmdh">获取验证码</span> 
+                  </div>  
+                <div class="text-wranning fz28">温馨提示：<br> 1、真实姓名与绑定微信实名认证姓名需保持一致，否则 会发放失败。<br> 2、如需修改姓名，请到【我的--认证信息】中修改。</div>
+                <div class="large-btn"><a href="" class="alinkwhite" >立即兑换</a>  </div> 
+            </form>
+        </div> 
+
+
+<script src="js/zepto.min.js"></script>
+<script>
+ $(function(){
+    $('.quick-btn-yz').on('click',function(){
+        $('.yzTog1').hide()
+        $('.yzTog2').show();
+    })
+  })  
+</script>
+</body>
+</html>

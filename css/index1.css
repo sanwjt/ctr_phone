@@ -1174,6 +1174,7 @@
   position: absolute;
   right: 0;
   height: 22px;
+  line-height: 22px;
   text-align: center;
   border-left: 1px solid #9B9B9B;
 }
@@ -1459,6 +1460,24 @@
   background: #F14955;
   display: inline-block;
   margin-right: 5px;
+
+}
+/* 现金兑换 */
+.btn-dh{
+  width: 88px;
+  height: 31px;
+  line-height: 31px;
+  color:#fff;
+  background:rgba(0,0,0,4);
+  position: absolute;
+  right: 0;
+  top:2px;
+  z-index: 11;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+
 }
 /* 金豆兑换 新用户*/
 .jdflex{
@@ -1544,6 +1563,23 @@
   position: relative;
   box-sizing: border-box;
   padding: 18px 0;
+  position: relative;
+}
+.newuser{
+  position: absolute;
+  top: -13px;
+  width: 85px;
+  background: #F14955;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: 0;
+  box-sizing: border-box;
+  padding: 2px 0;
+
 }
 .changeJindou li.jindou-active{
   border:1px solid #FF8720;

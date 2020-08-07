@@ -701,12 +701,23 @@
   margin:10px 0 ;
   z-index: 11;
 }
+/* 修改密码 */
+.changePwdtips{
+  color: #FF8720;
+  font-size: 12px;
+}
+.changePwdwaring{
+  color: #F14955;
+  font-size: 12px;
+
+}
 /* 商业调查-配额满 */
 .bs-icon-jd{
   position: absolute;
   top:144px;
   right: 0;
   width: 113.5px;
+  z-index: 11;
 }
 .bussiness-sorry{
   position: absolute;
@@ -1321,11 +1332,11 @@
    width: 28px;
  }
  .recordBox .record-num{
-  color:#FF8720;
-  font-size:18px;
+  color:#FF8720!important;
+  font-size:16px!important;
  }
  .recordBox .record-rednum{
-   color: #F14955;
+   color: #F14955!important;
  }
 /* 账号设置 */
 .accunt_config{
@@ -1436,15 +1447,19 @@
   margin-right: 5px;
 }
 /* 金豆兑换 新用户*/
-.changeBox{
-  padding:10px 16px 10px;
+.duihuangray{
+  width: 100%;
+  height: 12px;
+  background: #F6F7F8;
 }
 .changeJindou {
   display: flex;
   display: -webkit-flex;
   align-items: center;
-  justify-content: space-around;
   border-bottom:1px solid #D4D5D6;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 24px 16px 12px;
 }
 .changeJindou li{
   display: flex;
@@ -1453,18 +1468,29 @@
   width: 106px;
   height: 80px;
   border:1px solid #D4D5D6;
+  flex-direction: column;
   border-radius: 10px;
-  flex: 0 0 33.33%;
+  margin-bottom: 12px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 18px 0;
 }
-.changeJindou li div{
-  display: flex;
-  display: -webkit-flex;
+.changeJindou li.jindou-active{
+  border:1px solid #FF8720;
+  background: #FEF2E5;
+  color: #FF8720;
+
 }
+.cash{
+  font-weight: bold;
+}
+
 .changeTowechat{
   display: flex;
   display: -webkit-flex;
   align-items: center;
   justify-content:space-between;
+  padding:10px 16px;
 }
 .changetowx{
   display: flex;
@@ -2157,6 +2183,10 @@
 }
 
 /* 实名认证 */
+.certification-tips1{
+  padding: 19px 32px;
+  background: #F6F7F8;
+}
 .realname{
   position: absolute;
   width: 100%;

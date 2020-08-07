@@ -2027,7 +2027,16 @@
 .zhuanpan .ruleBox{
   padding:24px;
 }
-
+.zhuanpan  .choujiangBtn{
+  position: absolute;
+  height: 102px;
+  width: 98px;
+  background: url(../img/choujianganniu.png) no-repeat;
+  background-size: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
 .zhuanpan .ruleBox .ruleContent{
   background-color: #E33F40;
   border-radius: 10px;
@@ -2075,7 +2084,10 @@
   height: 280px;
   background: burlywood;
   border-radius: 140px;
-  position: absolute;
+  position: absolute; 
+  top: 23px;
+  left: 50%;
+  transform: translate(-50%,0);
 }
 
 /* 问卷 */

@@ -1118,6 +1118,11 @@
   height: 26px;
 
 }
+.iconToright .iconTorightdh{
+  width: 19px;
+  height: 17px;
+
+}
 .loginYzmbox{
   padding:49px 32px;
 }
@@ -1160,6 +1165,15 @@
   position: absolute;
   right: 0;
   bottom: 6px;
+  text-align: center;
+  border-left: 1px solid #9B9B9B;
+}
+.get-yzmdh{
+  color:#FF8720;
+  width: 113px;
+  position: absolute;
+  right: 0;
+  height: 22px;
   text-align: center;
   border-left: 1px solid #9B9B9B;
 }
@@ -1447,6 +1461,62 @@
   margin-right: 5px;
 }
 /* 金豆兑换 新用户*/
+.jdflex{
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+
+}
+.slidedh{
+  width: 261px;
+  position: relative;
+  height: 42px;
+  justify-content: space-between;
+  width: 261px;
+  line-height: 42px;
+  background: #F6F7F8;
+  border-radius: 8px;
+}
+.slideTextdh{
+  margin-left: 42px;
+  color: #FF8720;
+}
+.slidedh .iconToright{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 42px;
+  height: 40px;
+  border-left:none;
+  border:1px solid #D1CED1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-flex;
+  border-radius: 8px;
+  background: #fff;
+}
+.iconToright img{
+  width: 20px;
+  height: 26px;
+
+}
+.jddhBox{
+  display: flex;
+  border-bottom: 1px solid #f0f0f0;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  align-items: center;
+  position: relative;
+}
+.jddhBox input{
+  border: none;
+  font-size: 16px;
+  padding-left: 10px;
+  /* color:#9B9B9B; */
+}
 .duihuangray{
   width: 100%;
   height: 12px;

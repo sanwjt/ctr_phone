@@ -25,7 +25,6 @@
 .shimingImg{
   width: 197px;
   height:138px;
-  background: blue;
   display: flex;
   display: -webkit-flex;
   justify-content: center;
@@ -723,11 +722,11 @@
 .changePwdtips{
   color: #FF8720;
   font-size: 12px;
+  margin-top: 10px;
 }
 .changePwdwaring{
   color: #F14955;
   font-size: 12px;
-
 }
 /* 商业调查-配额满 */
 .bs-icon-jd{
@@ -1264,7 +1263,7 @@
   color:#000;
   background: #fff;
   font-size: 16px;
-  padding:19px 32px;
+  padding:19px 32px 0;
 }
 .solve{
      flex-wrap: nowrap;
@@ -1442,7 +1441,6 @@
 .messageImg{
   width: 343px;
   height: 157px;
-  background:#E3E4E6;
   margin-top: 24px;
 }
 .messageInfo{

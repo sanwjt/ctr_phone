@@ -133,6 +133,12 @@ body {
 .mt10{
   margin-top: 10px!important;
 }
+.mt10{
+  margin-top: 10px!important;
+}
+.mt24{
+  margin-top: 24px;
+}
 
 /* 顶部 */
 header{

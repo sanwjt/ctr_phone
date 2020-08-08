@@ -1151,7 +1151,51 @@
   width: 32px;
 } */
 /* 滑动验证 */
+.slidesuccess{
+  color: #FF8720;
+  background:#FEF2E5;
+  width: 261px;
+  position: relative;
+  height: 42px;
+  justify-content: space-between;
+  width: 261px;
+  line-height: 42px;
+  border-radius: 8px;
+  text-align: center;
 
+}
+.slideerror{
+  color: #F7465B;
+  background:#FFD6DB;
+  width: 261px;
+  position: relative;
+  height: 42px;
+  justify-content: space-between;
+  width: 261px;
+  line-height: 42px;
+  border-radius: 8px;
+  
+}
+.iconToright2{
+  position: absolute;
+  right:  0;
+  top:0;
+  width: 42px;
+  height: 40px;
+  border-left:none;
+  border:1px solid #D1CED1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-flex;
+  border-radius: 8px;
+  background: #fff;
+}
+.iconToright2 img{
+  width: 24px;
+  height: 24px;
+}
 .slide{
   width: 343px;
   position: relative;
@@ -1560,6 +1604,9 @@
   margin-left: 42px;
   color: #FF8720;
 }
+.slideTextdh2{
+  margin-left: 0;
+}
 .slidedh .iconToright{
   position: absolute;
   left: 0;
@@ -1579,7 +1626,6 @@
 .iconToright img{
   width: 20px;
   height: 26px;
-
 }
 .jddhBox{
   display: flex;

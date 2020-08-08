@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-07-28 22:57:44
+ * @LastEditTime: 2020-08-08 23:08:53
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /ctr_phone/zhuce_yzm.html
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +14,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index1.css">
-    <link href="lib/mobiscroll/css/mobiscroll.custom-3.0.0-beta6.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="lib/LArea/css/LArea.min.css">
+    <link rel="stylesheet" href="lib/code/verifyCode.css">
 
 
 	<title>注册</title>
@@ -24,12 +31,7 @@
                 <h4 class="lg-fontsize">绑定手机号</h4>
                 <div class="sent"><span>已发送短信验证码至</span>13900008888</div>
                 <div class="yzm-num">
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
-                    <span>1</span>
+                    <div id="codeDiv"></div>
                 </div>
             </div>
             <div class="large-btn"><a href="./zhuce_complate.html" class="alinkwhite">重新发送</a></div>                
@@ -39,10 +41,25 @@
    
 
 <script src="js/jquery.min.js"></script>
-<script src="lib/mobiscroll/js/mobiscroll.custom-3.0.0-beta6.min.js"></script>
-<script src="lib/LArea/js/LAreaData2.js"></script>
-<script src="lib/LArea/js/LArea.min.js"></script>
+<script src="lib/code/BrowserUtil.js"></script>
+<script src="lib/code/verifyCode.js"></script>
 <script src="js/flexible.js"></script>
+<script>
+        $(function(){
+        verifyCodeDOMUtil.buildCodeModule("codeDiv", "code")
+        verifyCode.init("code")
 
+        let object = {
+            alert : function (value) {
+                alert(value)
+            }
+        }
+
+        verifyCode.that = object
+        verifyCode.onFinish = function (value,that) {
+            that.alert(value)
+        }
+    })
+</script>
 </body>
 </html>

@@ -55,6 +55,7 @@ body {
     margin: 0 auto;
     font-weight: 500;
 }
+
 .mid-btn{
     width:311px;
     height:48px;
@@ -422,4 +423,5 @@ footer{
   .fixedtab.black{
     background-color: rgba(0, 0, 0, .5);
     color: #fff;
+    top:2px;
   }

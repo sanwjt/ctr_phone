@@ -1262,6 +1262,28 @@
   position: relative;
 }
 
+.quick-btn-success{
+  color: #FF8720;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+  background:rgba(254,242,229,1);
+}
+
+.quick-btn-error{
+  color: #F7465B;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+  background:#FFD6DB;
+}
+
 
 /* .login-yz{
   position: relative;
@@ -1325,9 +1347,9 @@
   font-size: 14px;
 }
 .zan{
-    width: 23px;
-    height: 23px;
+    width: 20px;
     vertical-align: middle;
+    display: inline-block;
 }
 .zan img{
   width: 100%;
@@ -1528,7 +1550,7 @@
   height: 31px;
   line-height: 31px;
   color:#fff;
-  background:rgba(0,0,0,4);
+  background:rgba(0,0,0,.4);
   position: absolute;
   right: 0;
   top:2px;
@@ -1536,8 +1558,6 @@
   text-align: center;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-
-
 }
 /* 金豆兑换 新用户*/
 .jdflex{
@@ -1607,7 +1627,7 @@
   align-items: center;
   border-bottom:1px solid #D4D5D6;
   flex-wrap: wrap;
-
+  justify-content: space-between;
   padding: 24px 16px 12px;
 }
 .changeJindou li{

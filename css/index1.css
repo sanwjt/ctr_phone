@@ -1245,7 +1245,7 @@
   font-weight:150;
   color:#000;
   background: #fff;
-  font-size: 14px;
+  font-size: 16px;
   padding:19px 32px;
 }
 .solve{
@@ -2260,7 +2260,7 @@
   line-height: 52px;
   font-size: 16px;
   border-bottom: 1px solid rgba(0,0,0,0.06);
-  font-size: 12px;
+  font-size: 16px;
   position: relative;
 }
 .subscribe ul li span{

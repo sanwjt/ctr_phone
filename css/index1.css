@@ -1118,6 +1118,11 @@
   height: 26px;
 
 }
+.iconToright .iconTorightdh{
+  width: 19px;
+  height: 17px;
+
+}
 .loginYzmbox{
   padding:49px 32px;
 }
@@ -1160,6 +1165,16 @@
   position: absolute;
   right: 0;
   bottom: 6px;
+  text-align: center;
+  border-left: 1px solid #9B9B9B;
+}
+.get-yzmdh{
+  color:#FF8720;
+  width: 113px;
+  position: absolute;
+  right: 0;
+  height: 22px;
+  line-height: 22px;
   text-align: center;
   border-left: 1px solid #9B9B9B;
 }
@@ -1230,7 +1245,7 @@
   font-weight:150;
   color:#000;
   background: #fff;
-  font-size: 14px;
+  font-size: 16px;
   padding:19px 32px;
 }
 .solve{
@@ -1445,8 +1460,82 @@
   background: #F14955;
   display: inline-block;
   margin-right: 5px;
+
+}
+/* 现金兑换 */
+.btn-dh{
+  width: 88px;
+  height: 31px;
+  line-height: 31px;
+  color:#fff;
+  background:rgba(0,0,0,4);
+  position: absolute;
+  right: 0;
+  top:2px;
+  z-index: 11;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+
 }
 /* 金豆兑换 新用户*/
+.jdflex{
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+
+}
+.slidedh{
+  width: 261px;
+  position: relative;
+  height: 42px;
+  justify-content: space-between;
+  width: 261px;
+  line-height: 42px;
+  background: #F6F7F8;
+  border-radius: 8px;
+}
+.slideTextdh{
+  margin-left: 42px;
+  color: #FF8720;
+}
+.slidedh .iconToright{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 42px;
+  height: 40px;
+  border-left:none;
+  border:1px solid #D1CED1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-flex;
+  border-radius: 8px;
+  background: #fff;
+}
+.iconToright img{
+  width: 20px;
+  height: 26px;
+
+}
+.jddhBox{
+  display: flex;
+  border-bottom: 1px solid #f0f0f0;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  align-items: center;
+  position: relative;
+}
+.jddhBox input{
+  border: none;
+  font-size: 16px;
+  padding-left: 10px;
+  /* color:#9B9B9B; */
+}
 .duihuangray{
   width: 100%;
   height: 12px;
@@ -1474,6 +1563,23 @@
   position: relative;
   box-sizing: border-box;
   padding: 18px 0;
+  position: relative;
+}
+.newuser{
+  position: absolute;
+  top: -13px;
+  width: 85px;
+  background: #F14955;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: 0;
+  box-sizing: border-box;
+  padding: 2px 0;
+
 }
 .changeJindou li.jindou-active{
   border:1px solid #FF8720;
@@ -2166,7 +2272,7 @@
   line-height: 52px;
   font-size: 16px;
   border-bottom: 1px solid rgba(0,0,0,0.06);
-  font-size: 12px;
+  font-size: 16px;
   position: relative;
 }
 .subscribe ul li span{

@@ -418,3 +418,8 @@ footer{
     background-color: #FF8720;
     color: #fff;
   }
+
+  .fixedtab.black{
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+  }

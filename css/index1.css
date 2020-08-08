@@ -30,6 +30,11 @@
   justify-content: center;
   align-items: center;
   margin:14px auto 0;
+  background: #FFFFFF;
+}
+.shimingImg img{
+  width: 103px;
+  height: 64px;
 }
 .shimingbtn{
   margin-top: 24px;

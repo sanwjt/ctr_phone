@@ -2502,6 +2502,15 @@
   flex-wrap: wrap;
 
 }
+.feedback  .feedbackImglist2{
+  display: flex;
+  justify-content: space-between;
+
+}
+.feedback  .feedbackImglist2 li{
+  width: 81px;
+  height: 52px;
+}
 .feedback  .feedbackImglist li{
   width: 114px;
   height: 72px;

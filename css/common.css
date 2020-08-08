@@ -78,6 +78,11 @@ body {
 }
 
 /* 灰色系 */
+.topGray{
+  width: 100%;
+  height: 12px;
+  background: #f7f7f7;
+}
 ::-webkit-input-placeholder{/*Webkit browsers*/
   　　　　color:#9B9B9B;
 }

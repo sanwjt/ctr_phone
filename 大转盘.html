@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-03 22:23:51
- * @LastEditTime: 2020-08-04 22:03:16
+ * @LastEditTime: 2020-08-08 15:36:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /ctr_phone/大转盘.html
@@ -22,7 +22,10 @@
       <div class="zhSel">
         <div class="zhSelbg">
             <img class="zpbg" src="./img/selbg.png" alt="">
-            <div class="zbcirtual"></div>
+            <div class="zbcirtual">
+              <canvas id="wheelcanvas" width="280" height="280"> </canvas>
+              <div class="choujiangBtn pointer"></div>
+            </div>
         </div>
       </div>
       <div class="ruleBox">
@@ -35,6 +38,265 @@
               <p>5. 请留意短信！ 活动最终解释权归央视市场研究有限公司所有。</p>
           </div>
       </div>
+      <img id="cash-img"  src="img/hongbao.png" alt="" style="display: none;">
+      <img id='shan-img'  src="img/jindou-20.png" alt="" style="display: none;">
+      <img id='sorry-img'  src="img/sorry-img.png" alt="" style="display: none;">
+      <img id='card-img'  src="img/card-img.png" alt="" style="display: none;">
+      <img id="cardtwo-img" src="img/cardtwo-img.png" alt="" style="display: none;">
+      <img id="single-img" src="img/single-img.png" alt="" style="display: none;">
+      <!-- 恭喜你 -->
+      <div class="diaglog" style="display: none;">
+        <div class="zpalert">
+          <p>成功获得1000个金豆 </p> 
+          <div  class="zpbg"> 
+              恭喜你
+          </div>
+        </div>
+      </div>
+      <!-- 本次抽奖未中奖，谢谢参与！ -->
+      <div class="diaglog" style="display: none;">
+        <div class="zpalert">
+          <p>本次抽奖未中奖，谢谢参与！ </p> 
+          <div  class="zpbg"> 
+              很遗憾
+          </div>
+        </div>
+      </div>
+      <!-- 您已完成本次抽奖 -->
+      <div class="diaglog" style="display: none;">
+        <div class="zpalert">
+          <p>您已完成本次抽奖<br/>
+            您可继续参与商业调查  <br/>
+            或升级钻石会员获得更多抽奖次数 <br/>
+            谢谢参与！ </p> 
+          <div  class="zpbg"> 
+              很遗憾
+          </div>
+        </div>
+      </div>
+
+      <!-- 火锅表单 -->
+      <div class="diaglog">
+        <div class="zpalert">
+          <p>获得荣氏火锅</p>
+          <span class="text">请您输入正确的邮寄地址，以保证奖品正常派送；我们会尽快寄出，请关注站内信查看动态，谢谢!</span>
+          <input type="text" placeholder="请输入收件人">
+          <input type="text" placeholder="请输入联系电话">
+          <input type="text" placeholder="请输入邮寄地址">
+          <div class="savebutton">确认无误</div>  
+          <div  class="zpbg"> 
+              很遗憾
+          </div>
+          <div class="closebtn"></div>
+        </div>
+
+      </div>
   </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="lib/zhuanpan/awardRotate.js"></script>
+  <script>
+    var turnplate={
+        restaraunts:[],				//大转盘奖品名称
+        colors:[],					//大转盘奖品区块对应背景颜色
+        outsideRadius:140,			//大转盘外圆的半径
+        textRadius:110,				//大转盘奖品位置距离圆心的距离
+        insideRadius:32,			//大转盘内圆的半径
+        startAngle:0,				//开始角度
+        randomRate:[],      //控制获奖率，百分制(相加需等于100%)，对应restaraunts(顺序需要保持一致)，
+        bRotate:false				//false:停止;ture:旋转
+    };
+    
+
+    $(document).ready(function(){
+      //动态添加大转盘的奖品与奖品区域背景颜色
+      turnplate.randomRate = ["100%", '0%', '0%', '0%', '0%', '0%', '0%', '0%'];
+      turnplate.restaraunts = ["1000个金豆", "1元现金", "谢谢参与", "20个金豆", "充值卡10元", "3元现金", "充值卡5元 ", "荣氏火锅"];
+      turnplate.colors = ["#FFF4D6", "#FFFFFF", "#FFF4D6", "#FFFFFF","#FFF4D6", "#FFFFFF", "#FFF4D6", "#FFFFFF"];
+
+      
+      var rotateTimeOut = function (){
+        $('#wheelcanvas').rotate({
+          angle:0,
+          animateTo:2160,
+          duration:8000,
+          callback:function (){
+            alert('网络超时，请检查您的网络设置！');
+          }
+        });
+      };
+
+      //旋转转盘 item:奖品位置; txt：提示语;
+      var rotateFn = function (item, txt){
+        var angles = item * (360 / turnplate.restaraunts.length) - (360 / (turnplate.restaraunts.length*2));
+        if(angles<270){
+          angles = 270 - angles; 
+        }else{
+          angles = 360 - angles + 270;
+        }
+        $('#wheelcanvas').stopRotate();
+        $('#wheelcanvas').rotate({
+          angle:0,
+          animateTo:angles+1800,
+          duration:8000,
+          callback:function (){
+            alert(txt);
+            turnplate.bRotate = !turnplate.bRotate;
+          }
+        });
+      };
+
+      $('.pointer').click(function (){
+        if(turnplate.bRotate)return;
+        turnplate.bRotate = !turnplate.bRotate;
+        //获取随机数(奖品个数范围内)
+        var item = rnd(turnplate.randomRate);
+        //奖品数量等于10,指针落在对应奖品区域的中心角度[252, 216, 180, 144, 108, 72, 36, 360, 324, 288]
+        rotateFn(item, turnplate.restaraunts[item-1]);
+      });
+    });
+
+    function rnd(rate){
+      var random = Math.floor(Math.random() * 100);
+      var myRandom = [];
+      var randomList = [];
+      var randomParent = [];
+      for(var i = 0; i < 100; i++){
+        myRandom.push(parseInt([i]) + 1);
+      }
+      for(var i = 0; i < rate.length; i++){
+        var temp = [];
+        var start = 0;
+        var end = 0;
+        randomList.push(parseInt(rate[i].split('%')[0]));
+        for(var j = 0; j < randomList.length; j++){
+          start += randomList[j-1] || 0
+          end += randomList[j]
+        }
+        temp = myRandom.slice(start, end);
+        randomParent.push(temp)
+      }
+      for(var i = 0; i < randomParent.length; i++){
+        if($.inArray(random, randomParent[i]) > 0){
+          return(i+1)
+        }
+      }
+      
+    }
+
+
+//页面所有元素加载完毕后执行drawRouletteWheel()方法对转盘进行渲染
+window.onload=function(){
+	drawRouletteWheel();
+};
+
+  function drawRouletteWheel() {    
+    var canvas = document.getElementById("wheelcanvas");    
+    if (canvas.getContext) {
+      //根据奖品个数计算圆周角度
+      var arc = Math.PI / (turnplate.restaraunts.length/2);
+      var ctx = canvas.getContext("2d");
+      //在给定矩形内清空一个矩形
+      ctx.clearRect(0,0,280,280);
+      //strokeStyle 属性设置或返回用于笔触的颜色、渐变或模式  
+      ctx.strokeStyle = "#FFBE04";
+      //font 属性设置或返回画布上文本内容的当前字体属性
+      ctx.font = '14px Microsoft YaHei';      
+      for(var i = 0; i < turnplate.restaraunts.length; i++) {       
+        var angle = turnplate.startAngle + i * arc;
+        ctx.fillStyle = turnplate.colors[i];
+        ctx.beginPath();
+        //arc(x,y,r,起始角,结束角,绘制方向) 方法创建弧/曲线（用于创建圆或部分圆）    
+        ctx.arc(140, 140, turnplate.outsideRadius, angle, angle + arc, false);    
+        ctx.arc(140, 140, turnplate.insideRadius, angle + arc, angle, true);
+        ctx.stroke();  
+        ctx.fill();
+        //锁画布(为了保存之前的画布状态)
+        ctx.save();   
+        
+        //----绘制奖品开始----
+        ctx.fillStyle = "#000000";
+        var text = turnplate.restaraunts[i];
+        var line_height = 17;
+        //translate方法重新映射画布上的 (0,0) 位置
+        ctx.translate(140 + Math.cos(angle + arc / 2) * turnplate.textRadius, 140 + Math.sin(angle + arc / 2) * turnplate.textRadius);
+        
+        //rotate方法旋转当前的绘图
+        ctx.rotate(angle + arc / 2 + Math.PI / 2);
+        
+        /** 下面代码根据奖品类型、奖品名称长度渲染不同效果，如字体、颜色、图片效果。(具体根据实际情况改变) **/
+        // console.log(text)
+        if(text.indexOf("M")>0){//流量包
+          console.log(text)
+          var texts = text.split("M");
+          for(var j = 0; j<texts.length; j++){
+            ctx.font = j == 0?'bold 20px Microsoft YaHei':'16px Microsoft YaHei';
+            if(j == 0){
+              ctx.fillText(texts[j]+"M", -ctx.measureText(texts[j]+"M").width / 2, j * line_height);
+            }else{
+              ctx.fillText(texts[j], -ctx.measureText(texts[j]).width / 2, j * line_height);
+            }
+          }
+        }else if(text.length>6){//奖品名称长度超过一定范围 
+          var texts = text
+          texts = text.substring(0,4)+"||"+text.substring(4);
+          var texts = text.split("||");
+          for(var j = 0; j<texts.length; j++){
+            ctx.fillText(texts[j], -ctx.measureText(texts[j]).width / 2, j * line_height);
+          }
+        }else{
+          // console.log(text)
+          //在画布上绘制填色的文本。文本的默认颜色是黑色
+          //measureText()方法返回包含一个对象，该对象包含以像素计的指定字体宽度
+          ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
+        }
+
+        //添加对应图标
+        console.log(text)
+        // console.log(text.indexOf('1000个金豆')>=0)
+        if(text.indexOf('1000')>=0){
+          var img= document.getElementById("shan-img");
+
+          img.onload=function(){  
+            ctx.drawImage(img,-15,10,69,69);      
+          }; 
+          ctx.drawImage(img,-30,10,64,64);  
+        }else if(text.indexOf("现金")>=0){
+          var img= document.getElementById("cash-img");
+          img.onload=function(){  
+            ctx.drawImage(img,-15,10,69,69);      
+          }; 
+          ctx.drawImage(img,-30,10,64,64);  
+        }else if(text.indexOf("谢谢参与")>=0){
+          var img= document.getElementById("sorry-img");
+          img.onload=function(){  
+            ctx.drawImage(img,-15,10,69,69);      
+          }; 
+          ctx.drawImage(img,-30,10,64,64);  
+        }else if(text.indexOf("充值卡5元")>=0){
+          var img= document.getElementById("card-img");
+          img.onload=function(){  
+            ctx.drawImage(img,-15,10,69,69);      
+          }; 
+          ctx.drawImage(img,-20,10,44,60);  
+        }else if(text.indexOf("充值卡10元")>=0){
+          var img= document.getElementById("cardtwo-img");
+          img.onload=function(){  
+            ctx.drawImage(img,-15,10,69,69);      
+          }; 
+          ctx.drawImage(img,-30,10,60,44);  
+        }else if(text.indexOf("20个金豆")>=0){
+          var img= document.getElementById("single-img");
+          img.onload=function(){  
+            ctx.drawImage(img,-15,10,69,69);      
+          }; 
+          ctx.drawImage(img,-30,10,60,44);  
+        }
+        //把当前画布返回（调整）到上一个save()状态之前 
+        ctx.restore();
+        //----绘制奖品结束----
+      }     
+    } 
+  }
+  </script>
 </body>
 </html>

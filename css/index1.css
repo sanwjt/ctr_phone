@@ -486,6 +486,24 @@
   height: 61px;
   display: block;
 }
+.diaglogInnder.sign-diagolo .diaglogCon{
+   padding-top: 75px;
+   position: relative;
+}
+
+.sign-diagolobg{
+  background:url(../img/sign-top.png) no-repeat center center;
+  width: 340px;
+  height: 200px ;
+  background-size: contain;
+  position: absolute;
+  top:-154px;
+  left: 50%;
+  transform: translate(-50%,0);
+  line-height: 314px;
+  color: #fff;
+  font-weight: 500;
+}
 /* 商业调查 */
 .business{
   position: absolute;
@@ -2136,7 +2154,16 @@
 .zhuanpan .ruleBox{
   padding:24px;
 }
-
+.zhuanpan  .choujiangBtn{
+  position: absolute;
+  height: 102px;
+  width: 98px;
+  background: url(../img/choujianganniu.png) no-repeat;
+  background-size: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
 .zhuanpan .ruleBox .ruleContent{
   background-color: #E33F40;
   border-radius: 10px;
@@ -2184,7 +2211,73 @@
   height: 280px;
   background: burlywood;
   border-radius: 140px;
+  position: absolute; 
+  top: 23px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+.zpalert{
+  margin-left: 40px;
+  margin-right: 40px;
+  background: #fff;
+  padding: 75px 27px 30px 27px;
+  width: 100%;
+  text-align: center;
+  font-family:Microsoft YaHei UI;
+  font-weight:bold;
+  border-radius: 20px;
+  position: relative;
+  line-height: 32px;
+}
+.zhuanpan .zpalert .text{
+  color: #F52C34;
+  font-size: 15px;
+  line-height: 22px;
+  text-align:justify;
+  display: inline-block;
+}
+.zhuanpan .zpalert input{
+  width: 100% ;
+  height: 45px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+}
+.zpalert .savebutton{
+  width: 184px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: #F62D3B ;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.zpalert .zpbg{
   position: absolute;
+  left: 0;
+  width: 240px;
+  height: 72px;
+  top:-24px;
+  left: 50%;
+  transform: translate(-50%,0);
+  background: url(../img/diaglo/zpdahead.png) no-repeat center center;
+  background-size: 100%;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+}
+.zhuanpan .closebtn{
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background: url(../img/btn-close.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    bottom: -54px;
+    left: 50%;
+    transform: translate(-50%,0);
 }
 
 /* 问卷 */

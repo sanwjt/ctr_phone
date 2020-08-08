@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-19 11:01:34
- * @LastEditTime: 2020-08-08 20:11:51
+ * @LastEditTime: 2020-08-08 22:21:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /ctr_phone/useLevel.html
@@ -26,7 +26,7 @@
               <li>钻石</li>
             </ul>
             <div class="leveIcon">
-                <img class="w100" src="img/putong.png" alt="">
+                <img class="w100 leveimg" src="img/sliver1.png" alt="">
             </div>
             <ul class="table">
                 <li>
@@ -104,14 +104,18 @@
           </li>
       </ul>
     </footer>
-  
+    <a href="leval.html">
+      <div class="fixedtab wriht">变动记录</div>
+    </a>
   <script src="js/zepto.min.js"></script>
   <script src="js/footer.js"></script>
 <script>
   $(function(){
     $('.nav li').on('click',function(){
+       var index = $(this).index();
        $(this).addClass('active');
-       $(this).siblings().removeClass('active')
+       $(this).siblings().removeClass('active');
+       $('.leveimg').attr({src:"img/sliver"+(index+1)+".png"});
     })
   })
 </script>

@@ -55,6 +55,7 @@ body {
     margin: 0 auto;
     font-weight: 500;
 }
+
 .mid-btn{
     width:311px;
     height:48px;
@@ -399,4 +400,28 @@ footer{
     padding: 16px 40px;
     display: inline-block;
     box-sizing: border-box;
+  }
+
+  .fixedtab{
+    padding:8px 12px;
+    position: fixed;
+    right: 0;
+    top:64px;
+    font-size: 16px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  .fixedtab.wriht{
+    background-color: #fff;
+  }
+  .fixedtab.ori{
+    background-color: #FF8720;
+    color: #fff;
+  }
+
+  .fixedtab.black{
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    top:2px;
   }

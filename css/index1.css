@@ -2439,10 +2439,10 @@
 }
 
 /* 反馈记录 */
-.feedback .nav{
+.feedback .feedbacnav {
   display: flex;
 }
-.feedback .nav li{
+.feedback .feedbacnav li{
   flex: 1;
   height: 60px;
   line-height: 60px;
@@ -2450,7 +2450,7 @@
   color: #9B9B9B;
   background-color: #fff;
 }
-.feedback .nav li.active{
+.feedback .feedbacnav li.active{
   color:#000;
   font-weight: 500;
   border-bottom: 1px solid #FF8720;
@@ -2505,4 +2505,21 @@
   font-weight: 300;
   margin-bottom: 12px;
   display: inline-block
+}
+.feedback  .qscontent{
+  padding-left: 32px;
+  padding-right: 32px ;
+  background-color: #fff;
+}
+
+.feedback  .qscontent textarea{
+  border: none;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: PingFangSC-Light,PingFang SC;
+  font-weight: 300;
+  margin-top: 12px;
+  width: 100%;  
+  padding:10px;
+  border:1px solid rgba(0, 0, 0, 0.2)
 }

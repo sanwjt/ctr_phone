@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-21 22:07:15
- * @LastEditTime: 2020-07-21 23:13:23
+ * @LastEditTime: 2020-08-08 18:06:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /ctr_phone/tv.html
@@ -18,7 +18,7 @@
 </head>
 <body>
  <!-- 顶部标题 -->
-  <div class="smartTv">
+  <div class="smartTv" style="padding-bottom: 100px;">
       <div class="toTop12"></div>
       <div class="card">
         <ul class="subject">
@@ -48,10 +48,25 @@
           <li><input type="text" name="vehicle" placeholder="请输入" style="width: 100%;"/></li>
         </ul>
       </div>
+      <div class="toTop12"></div>
+      <div class="card">
+        <ul class="subject">
+          <li><span>上传MAC照片</span></li>
+        </ul>
+        <div id="cupload-create"></div>
+         <div class="large-btn" style="margin-top: 24px; width: auto;"> 提交</div>
+      </div>
   </div>
 
 <script src="js/zepto.min.js"></script>
+<script src="lib/uploader/cupload.js"></script>
 <script>
+     var cuploadCreate = new Cupload ({
+                ele: '#cupload-create',
+                num: 3,
+                width: 90,
+                height:90,
+            });
 
 </script>	
 </body>

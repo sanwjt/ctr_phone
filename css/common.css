@@ -169,12 +169,14 @@ footer{
     height: 60px;
     left:0;
     bottom:0;
-    padding-top: 10px;
     box-sizing: border-box;
     z-index: 11111;
     background: #fff;
+    display: flex;
+    align-items: center;
   }
   footer ul {
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content:space-between;
@@ -182,16 +184,66 @@ footer{
     display: -webkit-flex;
    
   }
+
+  footer ul li.active{
+    color:#FF8720;
+  }
+
+  footer ul li div:first-child{
+    height: 24px;
+  }
+
+
+  footer ul li div.que{
+    background: url(../img/question.png) no-repeat center center;
+    background-size: 19px;
+  }
+  footer ul li div.dui{
+    background: url(../img/exchange.png) no-repeat center center;
+    background-size: 19px;
+  }
+
+  footer ul li div.act{
+    background: url(../img/activity.png) no-repeat center center;
+    background-size: 19px;
+  }
+  footer ul li div.mine{
+    background: url(../img/mine.png) no-repeat center center;
+    background-size: 19px;
+  }
+
+  footer ul li.active div.que{
+    background: url(../img/question-ed.png) no-repeat center center;
+    background-size: 19px;
+  }
+
+  footer ul li.active div.dui{
+    background: url(../img/exchange-ed.png) no-repeat center center;
+    background-size: 19px;
+  }
+
+
+  footer ul li.active div.act{
+    background: url(../img/activity-ed.png) no-repeat center center;
+    background-size: 19px;
+  }
+
+  footer ul li.active div.mine{
+    background: url(../img/mine-ed.png) no-repeat center center;
+    background-size: 19px;
+  }
+
+
   footer ul li{
     flex: 1;
     text-align: center;
     font-size: 11px;
   }
-  footer ul li img{
+  /* footer ul li img{
     width: 19px;
     text-align: center;
     display: inline-block;
-  }
+  } */
   footer .footer_ed{
     color:#FF8720;
   }
@@ -301,6 +353,7 @@ footer{
     align-items: center;
     background: rgba(0, 0, 0, .6);
     flex-wrap: wrap;
+    z-index: 111111;
   }
   .diaglogInnder{
     margin:0 40px;

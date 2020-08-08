@@ -87,6 +87,10 @@
   margin-right: 10px;
 }
 
+.inputBox2 .direction-icon{
+  width: 18px;
+}
+
 /* 帮助反馈 */
 .helpTop{
   width: 100%;
@@ -1334,6 +1338,7 @@
  }
  .recordBox{
    padding:0 32px;
+   padding-bottom: 80px;
  }
  .recordBox ul li{
    height: 90px;
@@ -1955,7 +1960,7 @@
 
 /* 兑换记录 */
 .changeRecord{
-  padding: 0 32px 60px 32px;
+  padding: 0 32px 80px 32px;
 }
 .changeRecord .changeList .changeItem{
   padding-bottom: 18px;

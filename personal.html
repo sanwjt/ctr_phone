@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-18 23:52:17
- * @LastEditTime: 2020-08-06 23:50:18
+ * @LastEditTime: 2020-08-08 19:12:27
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /ctr_phone/personal.html
@@ -125,29 +125,47 @@
     </div>
     </div>
     <!-- 底部悬浮 -->
- <footer >
-    <ul>
-        <li>
-            <div><img src="img/question.png" alt=""></div>
-            <div>问卷</div>
-        </li>
-        <li>
-            <div><img src="img/exchange.png" alt=""></div>
-            <div>兑换</div>
-        </li>
-        <li>
-            <div><img src="img/activity.png" alt=""></div>
-            <div>活动</div>
-        </li>
-        <li>
-            <div><img src="img/mine.png" alt=""></div>
-            <div>我的</div>
-        </li>
-    </ul>
-</footer>
+    <footer>
+        <ul>
+            <li class="active">
+                <div class="que">
+                </div>
+                <div>问卷</div>
+            </li>
+            <li>
+                <div class="dui">
+                </div>
+                <div>兑换</div>
+            </li>
+            <li>
+                <div class="act">
+                </div>
+                <div>活动</div>
+            </li>
+            <li>
+                <div class="mine">
+                </div>
+                <div>我的</div>
+            </li>
+        </ul>
+      </footer>
+
+  <!-- 弹窗 -->
+  <div class="diaglog">
+    <div class="diaglogInnder">
+      <div class="diaglogCon"> 
+          <div class="title"> 这是一个弹窗</div>
+         <p>
+              根据税务法要求，兑换支付宝/微信现金需提供个人有效身份证和真实姓名。
+          </p>
+      </div>
+      <img class="closebtn" src="img/btn-close.png" alt="">
+    </div>
+  </div>
 
 <script src="js/zepto.min.js"></script>
 <script src="lib/swiper/swiper.min.js"></script>
+<script src="js/footer.js"></script>
 <script>
     $(function(){
         var mySwiper = new Swiper('.swiper-container', {

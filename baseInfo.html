@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-19 18:11:29
- * @LastEditTime: 2020-07-19 19:18:39
+ * @LastEditTime: 2020-08-08 19:23:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /ctr_phone/baseInfo.html
@@ -12,13 +12,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover,user-scalable=no">
   <title>基础信息</title>
-  <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index1.css">
+  <link rel="stylesheet" href="css/common.css">
+
   <link rel="stylesheet" href="lib/mobileSelect/css/mobileSelect.css">
   <link rel="stylesheet" href="lib/mobileSelect/css/public.css">
   <link href="lib/mobiscroll/css/mobiscroll.custom-3.0.0-beta6.min.css" rel="stylesheet">
   <link rel="stylesheet" href="lib/LArea/css/LArea.min.css">
+
 </head>
 <body>
     <div class="baseInfo">
@@ -67,26 +69,30 @@
        </div>
       <div class="large-btn" style="margin-top: 24px;margin-bottom: 60px;">提交</div>
       <!-- 底部悬浮 -->
- <footer>
-  <ul>
-      <li>
-          <div><img src="img/question.png" alt=""></div>
-          <div>问卷</div>
-      </li>
-      <li>
-          <div><img src="img/exchange.png" alt=""></div>
-          <div>兑换</div>
-      </li>
-      <li>
-          <div><img src="img/activity.png" alt=""></div>
-          <div>活动</div>
-      </li>
-      <li>
-          <div><img src="img/mine.png" alt=""></div>
-          <div>我的</div>
-      </li>
-  </ul>
-</footer>
+      <footer>
+        <ul>
+            <li class="active">
+                <div class="que">
+                </div>
+                <div>问卷</div>
+            </li>
+            <li>
+                <div class="dui">
+                </div>
+                <div>兑换</div>
+            </li>
+            <li>
+                <div class="act">
+                </div>
+                <div>活动</div>
+            </li>
+            <li>
+                <div class="mine">
+                </div>
+                <div>我的</div>
+            </li>
+        </ul>
+      </footer>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/flexible.js"></script>
@@ -94,7 +100,7 @@
     <script src="lib/LArea/js/LAreaData2.js"></script>
     <script src="lib/LArea/js/LArea.min.js"></script>
     <script src="lib/mobileSelect/js/mobileSelect.js"></script>
-
+    <script src="js/footer.js"></script>
     <script>
       $(function(){
         // demo

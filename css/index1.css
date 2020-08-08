@@ -231,7 +231,7 @@
   margin:0 0 15px;
 }
 .recomend-input{
-  width: 316.5px;
+    width: 316.5px;
     height: 37px;
     line-height: 37px;
     border: 1px dashed #ccc;
@@ -241,6 +241,7 @@
     color: #4E188A;
     background: #F3F0F3;
     font-size: 15px;
+    padding-left: 9px;
 
 }
 .recomend-input span{
@@ -327,6 +328,34 @@
   overflow-y: scroll;
   
 }
+.inveterscBox2{
+  position: absolute;
+  top:100px;
+  width: 316.5px;
+  height: 247px;
+  background: #fff;
+  left:50%;
+  transform: translateX(-50%);
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; 
+  color:#4E188A;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  flex-direction: column;
+}
+.inveterscBox2 img{
+  width: 143.5px;
+  height: 77.5px;
+  margin-top: 50px;
+}
+.inveterscBox2 p{
+  width: 153px;
+  margin-top: 14.5px;
+}
 .inveterscBox li{
   border-bottom: 0.1px solid #F0F0F0;
   display: flex;
@@ -408,7 +437,6 @@
 .signBoxinnerct{
   width: 100%;
   height: 80px;
-  background: blanchedalmond;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1579,7 +1607,7 @@
   align-items: center;
   border-bottom:1px solid #D4D5D6;
   flex-wrap: wrap;
-  justify-content: space-between;
+
   padding: 24px 16px 12px;
 }
 .changeJindou li{

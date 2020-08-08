@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-17 20:40:11
- * @LastEditTime: 2020-07-19 11:05:02
- * @LastEditors: your name
+ * @LastEditTime: 2020-08-08 16:01:13
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /ctr_phone/business.html
 --> 
@@ -17,6 +17,8 @@
 	<title>签到</title>
 </head>
 <body>
+    <div class="signDay">
+
 <!-- 已签到 -->
         <div class="signBox">
             <img src="img/sign-bg.png" alt="">
@@ -83,27 +85,48 @@
         </li>
     </ul>
 </footer>   
+
 <!-- 弹窗 -->
-<div class="fixed">
+<div class="diaglog">
     <!-- 抽奖绑定手机弹窗 -->
-    <div class="fixedInnder">
-        <p>为了账号积分安全 请先绑定手机</p>
-        <div class="fixedbtn">去绑定>></div>
-        <img src="img/btn-close.png" alt="">
+    <div class="diaglogInnder" style="display: none;">
+        <div class="diaglogCon"> 
+            <div class="title">签到规则</div>  
+            <p class="text">
+                1、每七天一个签到周期，连续签到天数可活动不同的奖励。</br>
+                2、网站页面签到与微站点签到同步，您可以在微站点签到，网页上同步显示签到。
+            </p>
+        </div>
+        <img class="closebtn" src="img/btn-close.png" alt="">
     </div>
+
+
     <!-- 商业调查未完成弹窗 -->
-    <div class="fixedInnder">
-        <p>您有一个商业调查未完成 请先进行商业调查再签到</p>
-        <div class="fixedbtn">立即参与>></div>
-        <img src="img/btn-close.png" alt="">
+    <div class="diaglogInnder" style="display: none;">
+        <div class="diaglogCon"> 
+            <p>
+                您有一个商业调查未完成 </br>
+                请先进行商业调查再签到
+            </p>
+            <div class="diaglogoBtn">立即参与>></div>
+        </div>
+        <img class="closebtn" src="img/btn-close.png" alt="">
     </div>
-    <!-- 签到成功弹窗 -->
-    <div class="fixedInnder">
-        <img src="img/sign-top.png" alt="">
-        <p>成功领取35个金豆</p>
-        <img src="img/btn-close.png" alt="">
-    </div>
+
+    
+    <!-- 账户金豆不足 -->
+    <div class="diaglogInnder sign-diagolo">
+        <div class="diaglogCon"> 
+            <p>
+                成功领取35个金豆
+            </p>
+            <div class="sign-diagolobg">签到成功</div>
+        </div>
+        <img class="closebtn" src="img/btn-close.png" alt="">
+    </div>  
 </div>
+</div>
+
 <script src="js/zepto.min.js"></script>
 <script src="js/flexible.js"></script>
 <script>

@@ -10,15 +10,16 @@
 </head>
 <body>
         <div class="changePhone">
-            <div class="inputBox mb30">
+            <div class="inputBox">
                 <input type="password" placeholder="请输入密码">
             </div>
             <div class="changePwdtips">由8-20位字母、数字或字符组成</div>
-            <div class="changePwdwaring">由8-20位字母、数字或字符组成</div>
-            <div class="inputBox mb30">
+            <div class="changePwdwaring">符号和字母至少包含一种</div>
+
+            <div class="inputBox">
                 <input type="password" placeholder="请再次输入新密码">
             </div>
-            <div class="mid-btn mt40">确定</div>  
+            <div class="mid-btn mt24">确定</div>  
         </div>
                    
 <!-- 底部悬浮 -->
@@ -44,12 +45,14 @@
 </footer>
    
     
-<!-- 弹窗 -->
-<div class="fixed">
-    <div class="zhuxiaofixed">修改成功</div>
-    <img src="img/btn-close.png" alt="">
-</div>
 
+<!-- 弹窗 -->
+<div class="fixed" style="display: none;">
+<div class="fixedinner">
+    <div class="fixedinnerctn">修改成功</div>
+    <img src="img/btn-close.png" alt="" class="close">
+</div> 
+</div> 
 <script src="js/zepto.min.js"></script>
 <script>
 

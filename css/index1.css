@@ -688,10 +688,11 @@
   width: 272.5px;
   height: 40px;
   position: absolute;
-  top:980px;
+  top:988px;
   left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
+  font-size: 15px;
 }
 .bussiness-jindou{
   width:81px;
@@ -785,6 +786,35 @@
   left:50%;
   transform: translateX(-50%);
   width: 96px;
+}
+.business-full-p4{
+  position: absolute;
+  top:75px;
+  left:50%;
+  transform: translateX(-50%);
+  color: #038EE4;
+  font-weight: lighter;
+  font-size: 19px;
+  width: 255px; 
+}
+.business-full-p5{
+  position: absolute;
+  top:125px;
+  left:50%;
+  transform: translateX(-50%);
+  color: #038EE4;
+  font-weight: bold;
+  font-size: 19px;
+}
+.business-full-p6{
+  position: absolute;
+  top:75px;
+  left:50%;
+  transform: translateX(-50%);
+  color: #038EE4;
+  font-weight: lighter;
+  font-size: 19px;
+  width: 244px; 
 }
 .business-full-p1{
   position: absolute;

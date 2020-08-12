@@ -588,7 +588,7 @@
 }
 
 .invate-box-sm{
-  width: 375px;
+  width:345px;
   background-size: 100% 100%;
   position: absolute;
   top:199.5px;
@@ -881,7 +881,6 @@
   padding:15px;
 }
 .activityBox li{
-  width: 330px;
   height: 155.5px;
   background: url(../img/li1.png) no-repeat;
   background-size: 100% 100%;
@@ -1579,7 +1578,7 @@
   color: #FF8720;
 }
 .messageImg{
-  width: 343px;
+  /* width: 343px; */
   height: 157px;
   margin-top: 24px;
 }
@@ -1710,7 +1709,7 @@
   display: flex;
   display: -webkit-flex;
   align-items: center;
-  width: 106px;
+  width: 30%;
   height: 80px;
   border:1px solid #D4D5D6;
   flex-direction: column;
@@ -1932,12 +1931,14 @@
 }
 
 .userLeve .header .table{
- width: 343px;
+ /* width: 343px; */
  margin: 0 auto;
  display: flex;
  background-color: #fff;
  border-radius: 6px;
  overflow: hidden;
+ margin-left: 16px;
+ margin-right: 16px;
 }
 .userLeve .header .table li{
 
@@ -2537,7 +2538,7 @@
   box-sizing: border-box;
 }
 .realname .header{
-  width: 311px;
+  /* width: 311px; */
   height: 300px;
   margin: 0 auto;
   background: url(../img/shiming.png) no-repeat;

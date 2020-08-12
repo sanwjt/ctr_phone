@@ -44,7 +44,7 @@ body {
 
 /* 按钮 */
 .large-btn{
-    width:343px;
+    max-width:343px;
     height:48px;
     line-height: 48px;
     border-radius:6px;
@@ -57,7 +57,7 @@ body {
 }
 
 .mid-btn{
-    width:311px;
+    max-width:311px;
     height:48px;
     line-height: 48px;
     border-radius:6px;

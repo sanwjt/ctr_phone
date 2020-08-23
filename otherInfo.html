@@ -1,0 +1,94 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-07-19 18:11:29
+ * @LastEditTime: 2020-08-23 16:34:29
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /ctr_phone/baseInfo.html
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover,user-scalable=no">
+  <title>基础信息</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index1.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="lib/switch/honeySwitch.css">
+
+</head>
+<body>
+    <div class="baseInfo">
+       <div class="header">
+          <p><span style="color: #F14955;font-size: 14px;">完善更多信息，可获得更多奖励和项目机会哦!</span></p>
+
+       </div>
+       <div class="content">
+            <div class="formItemSelect">
+              <div class="label">私家车</div>
+              <div class="itemValue" id="trigger1" style="color: #9B9B9B;">请完善</div>
+            </div>
+
+            <div class="formItemSelect">
+                <div class="label">智能电视</div>
+                <div class="itemValue" id="trigger1"  style="color: #9B9B9B;">请完善</div>
+              </div>
+              <div class="subscribe"> 
+                <ul style="padding: 0;">
+                    <li>
+                        是否愿意接受电话访问
+                        <span class="switch-off" themeColor="#FF8720"></span>
+                   </li>
+                    <li>
+                        是否愿意参加线下座谈会
+                            <span class="switch-off" themeColor="#FF8720"></span>
+                    </li>
+                        <li>
+                            是否愿意线下活动
+                            <span class="switch-off" themeColor="#FF8720"></span>
+                    </li>
+                  </ul>
+              </div>
+        
+      <div class="large-btn" style="margin-top: 24px;margin-bottom: 60px;">提交</div>
+
+       </div>
+      <!-- 底部悬浮 -->
+      <footer>
+        <ul>
+            <li class="active">
+                <div class="que">
+                </div>
+                <div>问卷</div>
+            </li>
+            <li>
+                <div class="dui">
+                </div>
+                <div>兑换</div>
+            </li>
+            <li>
+                <div class="act">
+                </div>
+                <div>活动</div>
+            </li>
+            <li>
+                <div class="mine">
+                </div>
+                <div>我的</div>
+            </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="lib/switch/honeySwitch.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+        $(function(){
+          //   switch 切换
+          //   具体参考http://www.jq22.com/demo/honeySwitch201702072307/
+            $('.switch-off').css({zoom:0.8})
+        })
+    </script>
+</body>
+</html>

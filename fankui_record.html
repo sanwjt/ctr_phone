@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-05 22:11:45
- * @LastEditTime: 2020-08-08 19:49:39
+ * @LastEditTime: 2020-08-23 16:29:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /ctr_phone/反馈记录.html
@@ -9,6 +9,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0, viewport-fit=cover,user-scalable=no">
     <title>反馈记录</title>
 
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="css/index1.css">
     <link rel="stylesheet" href="lib/mobileSelect/css/mobileSelect.css">
     <link rel="stylesheet" href="lib/mobileSelect/css/public.css">
+    <link rel="stylesheet" href="lib/switch/honeySwitch.css">
 </head>
 <body style="background:#F6F7F8;min-height:100%"> 
     <div class="feedback" style="padding-bottom: 80px;">
@@ -93,6 +95,9 @@
         </div>
 
     </div>
+    <div class="toast">
+        已提交  
+    </div>
        <!-- 底部悬浮 -->
    <footer>
     <ul>
@@ -133,7 +138,7 @@
             })
 
             // 具体方法参考http://www.jq22.com/jquery-info22747
-            var cuploadCreate = new Cupload ({
+            var cuploadCreate1 = new Cupload ({
                 ele: '#cupload-create',
                 num: 3,
                 width: 90,

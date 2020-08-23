@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-19 18:11:29
- * @LastEditTime: 2020-08-11 21:19:53
+ * @LastEditTime: 2020-08-23 18:07:19
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /ctr_phone/baseInfo.html
@@ -27,7 +27,13 @@
        <div class="header">
           <p>
             新注册用户首次完善个人资料奖励<span>100金豆!</span><br>完善详细信息可获得更多任务！</p>
-          <p class="theme-text-color">完善程度</p>
+          <p class="theme-text-color completeradio">
+            <span>完善程度: </span>
+            <span class="radiobg">
+              <span class="radio"></span>
+            </span>
+            <span class="theme-text-color">50%</span>
+          </p>
        </div>
        <div class="content">
             <div class="formItemSelect">
@@ -94,6 +100,17 @@
             </li>
         </ul>
       </footer>
+
+
+      <div class="confimModal">
+          <div class="confimContent">
+            <p>是否保存当前信息？</p>
+            <div class="btnbox">
+              <div class="cancle">取消</div>
+              <div class="theme-text-color">确定</div>
+            </div>
+          </div>
+      </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/flexible.js"></script>
@@ -104,6 +121,9 @@
     <script src="js/footer.js"></script>
     <script>
       $(function(){
+        $('.cancle').on('click',function(){
+            $('.confimModal').hide()
+        })
         // demo
         var sexArr = [{id:'man',value:"男"},{id:'woman',value:'女'}]
         var mobileSelect1 = new MobileSelect({

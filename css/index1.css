@@ -73,6 +73,9 @@
   display: -webkit-flex;
   
 }
+.inputBox2 span{
+  white-space:nowrap;
+}
 .certificationRight{
   display:flex;
   flex-wrap: nowrap;
@@ -1845,9 +1848,11 @@
   display: -webkit-flex;
   font-size: 16px;
   margin-top: 12px;
+  position: relative;
 }
 .register-completebox .answerList input{
   font-size: 16px;
+  text-align: center;
 }
 .radioChoose{
   display:flex;
@@ -1886,7 +1891,11 @@
 }
 
 .passwordInput{
-  margin-right: 50px;
+  /* margin-right: 50px; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-44%,-50%);
 }
 
 /* 注销 */
@@ -1987,6 +1996,31 @@
 
 .baseInfo .content{
   padding: 0 32px;
+}
+.baseInfo .completeradio {
+  display: flex;
+  align-items: center;
+}
+.baseInfo .completeradio .radiobg{
+  display: inline-block;
+  width: 184px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: #D8D8D8;
+  position: relative;
+  overflow: hidden;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.baseInfo .completeradio .radio{
+  position: absolute;
+  height: 100%;
+  border-radius: 8px;
+  width: 50%;
+  top:0;
+  left: 0;
+  background: #FF8720;
 }
 
 /* 信用等级 */
@@ -2100,6 +2134,7 @@
   background: url(../img/right.png) no-repeat right center;
   display: flex;
   background-size: 18px;
+  justify-content: space-between;
 }
 .changeRecord .changeList .changeItem section.down{
   background: url(../img/down.png) no-repeat right center;

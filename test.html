@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        .wrap{
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        .main{
+            width: 600px;
+            height: 600px;
+
+        }
+        .num{
+            width: 200px;
+            height: 200px;
+            float: left;
+            text-align: center;
+            font-size: 40px;
+            box-sizing: border-box;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="main">
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num">4</div>
+            <div class="num" id="start">抽奖</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+            <div class="num">7</div>
+            <div class="num">8</div>
+        </div>
+    </div>
+</body>
+<script>
+    var divNum=document.getElementsByClassName('num');
+    var starBtn=document.getElementsByClassName('start');
+    var stoPosition = Math.floor(Math.random()*8+1);
+</script>
+</html>

@@ -130,6 +130,8 @@
   width: 100%;
   height: 100%;
   background: #D599FF;
+  position: relative;
+  padding-bottom: 200px;
 }
 .recommendWelfare{
   width: 316.5px;
@@ -211,7 +213,6 @@
 .recommandWaybox{
   position: absolute;
   top:40px;
-  width: 317px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 15px;
@@ -412,7 +413,7 @@
 }
 .signRule{
   position: absolute;
-  top: 16px;
+  top: 36px;
   right: 0;
   width: 60px;
   height: 26px;
@@ -426,7 +427,7 @@
 }
 .signBoxinner{
   position: absolute;
-  top:200px;
+  top:262px;
   left:50%;
   transform: translateX(-50%);
   width: 348px;
@@ -458,6 +459,15 @@
   margin:2px 2px;
   padding:2px 0;
   box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.jindoulq{
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #FD6E34;
 }
 .signBoxinner li:nth-child(7){
   width: 170px;
@@ -483,7 +493,7 @@
   line-height: 48px;
   background: #FD6E33;
   position: absolute;
-  top:500px;
+  top:530px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 17px;
@@ -591,22 +601,24 @@
 }
 
 .invate-box-sm{
-  width:345px;
+  width:360px;
   background-size: 100% 100%;
   position: absolute;
   top:199.5px;
   height: 216px;
-  background:url(../img/invate-box-sm.png) no-repeat;
+  background:url(../img/invate-box-sm.png?v=111) no-repeat;
   background-size: 100% 100%;
   overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .invate-box-lg{
-  width: 345px;
+  width: 360px;
   background-size: 100% 100%;
   position: absolute;
   top:400.5px;
   height: 403px;
-  background:url(../img/invate-box-lg.png) no-repeat;
+  background:url(../img/invate-box-lg.png?v=2222) no-repeat;
   background-size: 100% 100%;
   /* background: pink; */
   overflow: hidden;
@@ -1030,8 +1042,13 @@
   width: 100%;
   height: 227px;
   background: #FE8C2A;
-  padding-top:20px;
- 
+  padding-top:20px; 
+}
+.personalTop2{
+  width: 100%;
+  height: 133px;
+  background: #F6F7F8;
+  padding-top:20px; 
 }
 .personalInner{
   padding:0 16px 50px;
@@ -1041,7 +1058,6 @@
   overflow: hidden;
 }
 .statements{
-  width: 300px;
   padding:7px 23px 6px 20px;
   background: #fff;
   border-radius: 20px;
@@ -1122,7 +1138,6 @@
   display: block;
 }
 .beanBox{
-  width: 343px;
   height: 93px;
   background: #fff;
   border-radius: 6px;
@@ -1229,7 +1244,6 @@
   height: 24px;
 }
 .slide{
-  width: 343px;
   position: relative;
   height: 44px;
   margin-top: 10px;

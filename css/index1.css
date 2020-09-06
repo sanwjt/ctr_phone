@@ -2355,7 +2355,22 @@
   border-radius: 10px;
   padding: 20px 15px;
 }
-
+.zhChoice{
+  position: absolute;
+  top: 441px;
+  left: 118px;
+  color: #fff;
+}
+.zhChoice span{
+  color:#FFEA00;
+  margin:0 5px;
+}
+.zhUser{
+  position: absolute;
+    top: 476px;
+    left: 58px;
+    color: #810B11;
+}
 .zhuanpan .ruleBox .ruleContent .title{
   font-size: 17px;
   color: #fff;

@@ -176,8 +176,11 @@
 .recommend-peo{
   position: absolute;
   z-index: 11;
-  top:8px;
-  width: 100%;
+  top: 8px;
+  width: 375px;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -191px;
 }
 .connection{
   position: absolute;
